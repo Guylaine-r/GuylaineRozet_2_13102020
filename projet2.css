@@ -1,0 +1,118 @@
+/* I- Header */
+/* Logo */
+#logo
+{
+    width: auto;
+    height: 50px;
+}
+
+/* Menu */
+
+#inscription /* Envelever la bordure du haut sur "s'inscrire" */
+{
+    list-style-type: none;
+    border-style : none;
+}
+
+#menu
+{
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+#menu :hover 
+{
+    padding-left: 6px;
+    border-top: 1px solid blue;
+}
+
+#menu > :first-child
+{
+    margin-top: 0;
+   
+}
+
+#menu > :last-child 
+{
+    margin-bottom: 0;
+    
+}
+
+/* Texte Intro */
+
+.p1
+{
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.p2
+{
+    color: grey;
+    font-size: 15px;
+
+}
+
+/* Barre de recherche */
+
+
+
+/* Filtre */
+#filtre
+{
+    display: flex;
+
+}
+
+.composant_filtre
+{
+    padding: 1rem;
+    width: 420px;
+    box-shadow: 0 15px 30px 0 rgba(141, 137, 137, 0.11),0 5px 15px 0 rgba(119, 112, 112, 0.623);
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    margin-left: 15px;
+    
+    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+  
+.composant_filtre:hover
+{
+    padding-left: 0.5rem;
+}
+  
+.composant_filtre > :first-child
+{
+    margin-top: 0;
+}
+
+.composant_filtre > :last-child 
+{
+    margin-bottom: 0;
+}
+
+/* II- Body */
+/* bloc_logement (hébergement à marseille et les plus populaires) */
+
+#Populaire h2
+{
+    display: flex;
+    justify-content: space-between;
+}
+/* les activités */
+
+
+/* III-Footer */
+footer ul
+{
+    list-style-type: none;
+    display: flexbox;
+    color: grey;
+}
