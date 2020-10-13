@@ -91,6 +91,11 @@
     margin-top: 0;
 }
 
+.composant_filtre > :last-child 
+{
+    margin-bottom: 0;
+}
+
 /* II- Body */
 /* bloc_logement (hébergement à marseille et les plus populaires) */
 
@@ -100,8 +105,11 @@
     justify-content: space-between;
 }
  /* les activités */
-  
-.composant_filtre > :last-child 
+
+  /* III-Footer */
+footer ul
 {
-    margin-bottom: 0;
+    list-style-type: none;
+    display: flexbox;
+    color: grey;
 }
