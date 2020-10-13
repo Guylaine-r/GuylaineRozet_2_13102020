@@ -57,7 +57,10 @@
 }
 
 /* Barre de recherche */
-
+.Barre_de_recherche /* Faire apparaitre le logo 'postion' */
+{
+    display: flex;
+}
 
 
 /* Filtre */
