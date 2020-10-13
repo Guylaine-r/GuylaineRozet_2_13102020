@@ -90,6 +90,16 @@
 {
     margin-top: 0;
 }
+
+/* II- Body */
+/* bloc_logement (hébergement à marseille et les plus populaires) */
+
+#Populaire h2
+{
+    display: flex;
+    justify-content: space-between;
+}
+ /* les activités */
   
 .composant_filtre > :last-child 
 {
