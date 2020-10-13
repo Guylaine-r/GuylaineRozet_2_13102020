@@ -5,3 +5,38 @@
     width: auto;
     height: 50px;
 }
+
+/* Menu */
+
+#inscription /* Envelever la bordure du haut sur "s'inscrire" */
+{
+    list-style-type: none;
+    border-style : none;
+}
+
+#menu
+{
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+#menu :hover 
+{
+    padding-left: 6px;
+    border-top: 1px solid blue;
+}
+
+#menu > :first-child
+{
+    margin-top: 0;
+   
+}
+
+#menu > :last-child 
+{
+    margin-bottom: 0;
+    
+}
