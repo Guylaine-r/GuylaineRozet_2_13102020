@@ -40,3 +40,18 @@
     margin-bottom: 0;
     
 }
+
+/* Texte Intro */
+
+.p1
+{
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.p2
+{
+    color: grey;
+    font-size: 15px;
+
+}
