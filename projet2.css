@@ -57,9 +57,31 @@
 }
 
 /* Barre de recherche */
-.Barre_de_recherche /* Faire apparaitre le logo 'postion' */
+.Barre_de_recherche
 {
     display: flex;
+}
+.fas /* Icon-position */
+{
+    width: 40px;
+    height: 40px;
+}
+
+#Search
+{
+   border-color: gray; 
+}
+
+#button
+{
+    display: inline-block; /* Voir à quoi cela sert ??? */
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 6%;
+    color: #ffffff;
+    background-color: blue;
+    border-color: blue;
 }
 
 
