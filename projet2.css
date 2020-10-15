@@ -10,8 +10,10 @@
 
 #inscription /* Envelever la bordure du haut sur "s'inscrire" */
 {
+ 
     list-style-type: none;
     border-style : none;
+
 }
 
 #menu
@@ -27,6 +29,7 @@
 {
     padding-left: 6px;
     border-top: 1px solid blue;
+    
 }
 
 #menu > :first-child
@@ -63,11 +66,15 @@
 }
 .fas /* Icon-position */
 {
+    display: flex;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
     width: 40px;
     height: 40px;
+    background-color: gray;
 }
 
-#Search
+#Search /* Erreur voir avec Aurélien ... */
 {
    border-color: gray; 
 }
@@ -86,42 +93,82 @@
 
 
 /* Filtre */
+#nav_filtre
+{
+    display: flex;
+}
 #filtre
 {
     display: flex;
-
+    flex-direction: row;
+    padding-left: 30px;
+    padding-top: 15px;
 }
 
 .composant_filtre
 {
-    padding: 1rem;
-    width: 420px;
-    box-shadow: 0 15px 30px 0 rgba(141, 137, 137, 0.11),0 5px 15px 0 rgba(119, 112, 112, 0.623);
+    display: flex;
+    width: auto;
     background-color: #ffffff;
     border-radius: 0.5rem;
-    margin-left: 15px;
-    
-    transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
-    display: flex;
     justify-content: space-between;
     list-style-type: none;
-
-}
-  
-.composant_filtre:hover
-{
-    padding-left: 0.5rem;
-}
-  
-.composant_filtre > :first-child
-{
-    margin-top: 0;
+    padding-top: 10px;
 }
 
-.composant_filtre > :last-child 
+#economique a
 {
-    margin-bottom: 0;
+    display: flex;
+    box-shadow: 0px 2px 5px gray;
+    list-style-type: none;
+    width: auto;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+#familial a
+{
+    display: flex;
+    box-shadow: 0px 2px 5px gray;
+    list-style-type: none;
+    width: auto;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#romantique a
+{
+    display: flex;
+    box-shadow: 0px 2px 5px gray;
+    list-style-type: none;
+    width: auto;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#animaux a
+{
+    display: flex;
+    box-shadow: 0px 2px 5px gray;
+    list-style-type: none;
+    text-decoration: none;
+    width: auto;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
 
 /* II- Body */
 /* bloc_logement (hébergement à marseille et les plus populaires) */
