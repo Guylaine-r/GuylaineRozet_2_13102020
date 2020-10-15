@@ -66,12 +66,21 @@
 }
 .fas /* Icon-position */
 {
-    display: flex;
     border-top-left-radius: 10px;
     border-bottom-left-radius:10px ;
     width: 40px;
-    height: 40px;
     background-color: gray;
+    padding: 5%;
+}
+
+#i_position
+{
+    width: 20px;
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+    background-color: gray;
+    padding: 16px;
 }
 
 #Search /* Erreur voir avec Aurélien ... */
@@ -93,10 +102,7 @@
 
 
 /* Filtre */
-#nav_filtre
-{
-    display: flex;
-}
+
 #filtre
 {
     display: flex;
@@ -108,10 +114,10 @@
 .composant_filtre
 {
     display: flex;
+    justify-content: row;
     width: auto;
     background-color: #ffffff;
     border-radius: 0.5rem;
-    justify-content: space-between;
     list-style-type: none;
     padding-top: 10px;
 }

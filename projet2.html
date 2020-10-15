@@ -22,20 +22,20 @@
             <p class="p2"> En plein centre ville ou en pleine nature</p>
         </div>
         <div class="Barre_de_recherche">
-            <i class="fas fa-map-marker-alt"></i> <!-- lien donner par Font awesome -->
+            <img id="i_position" src="./fontawesome-free-5.15.1-desktop/svgs/solid/map-marker-alt.svg" alt="icon position" /> 
             <input type="search" name="recherher" id="Search">
             <input type="submit" value="Rechercher" id="button"/>
         </div>
 
-        <nav id="nav_filtre">
-            <h4 id="filtre">Filtres</h4> <!--  Ou alors mettre une balise sémantique comme <strong> au lieu de <h4> -->
-            <ul class="composant_filtre" >
-                <li id="economique"><a href="#">Economique</a></li>
-                <li id="familial"><a href="#">Familial</a></li>
-                <li id="romantique"><a href="#">Romantique</a></li>
-                <li id="animaux"><a href="#">Animaux autorisés</a></li>
-            </ul>
-        </nav>
+        <div class="composant_filtre">
+            <span id="filtre">filtres</span>
+            <div id="economique" ><a href="#">Economique</a></div>
+            <div id="familial" ><a href="#">familial</a></div>
+            <div id="romantique" ><a href="#">Romantique</a></div>
+            <div id="animaux"><a href="#">Animaux autorisés</a></div>
+    
+        </div>
+ 
     </header>
     <body>
         <div id="bloc_logements">
