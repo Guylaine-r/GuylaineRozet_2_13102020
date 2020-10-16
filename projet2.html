@@ -2,42 +2,46 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="projet2.css" />
         <title>Reservia</title>
     </head>
-    <header>
-        <div>
-            <img id="logo" src="./images/logo/Reservia@3x.png" alt="logo Reservia" />
-        </div>
     
-        <nav> <!-- nav d'escription du menu -->
-            <ul id="menu">    
-                <li><a href="#Hebergements">Hébergements</a></li> <!-- ancre pour mener directement à la sertion de la page -->
-                <li><a href="#Activites">Activités</a></li>  <!-- ancre pour mener directement à la sertion de la page -->
-                <li id="inscription"><a href="#">S'incrire</a></li> <!-- Mis ID pour isoler "s'incrire" -->
-            </ul>
-        </nav>
-        <div id="texte_accroche"> <!-- TEXTE apres titre Reservia -->
-            <p class="p1"> Trouvez votre hébergement pour des vacances de rêve </p> <!-- Mettre un autre "id" pour separer car texte change ? -->
-            <p class="p2"> En plein centre ville ou en pleine nature</p>
-        </div>
-        <div class="Barre_de_recherche">
-            <img id="i_position" src="./fontawesome-free-5.15.1-desktop/svgs/solid/map-marker-alt.svg" alt="icon position" /> 
-            <input type="search" name="recherher" id="Search">
-            <input type="submit" value="Rechercher" id="button"/>
-        </div>
-
-        <div class="composant_filtre">
-            <span id="filtre">filtres</span>
-            <div id="economique" ><a href="#">Economique</a></div>
-            <div id="familial" ><a href="#">familial</a></div>
-            <div id="romantique" ><a href="#">Romantique</a></div>
-            <div id="animaux"><a href="#">Animaux autorisés</a></div>
-    
-        </div>
- 
-    </header>
     <body>
+
+        <header>
+            <div>
+                <img id="logo" src="./images/logo/Reservia@3x.png" alt="logo Reservia" />
+            </div>
+        
+            <nav> <!-- nav d'escription du menu -->
+                <ul id="menu">    
+                    <li><a href="#Hebergements">Hébergements</a></li> <!-- ancre pour mener directement à la sertion de la page -->
+                    <li><a href="#Activites">Activités</a></li>  <!-- ancre pour mener directement à la sertion de la page -->
+                    <li id="inscription"><a href="#">S'incrire</a></li> <!-- Mis ID pour isoler "s'incrire" -->
+                </ul>
+            </nav>
+            <div id="texte_accroche"> <!-- TEXTE apres titre Reservia -->
+                <p class="p1"> Trouvez votre hébergement pour des vacances de rêve </p> <!-- Mettre un autre "id" pour separer car texte change ? -->
+                <p class="p2"> En plein centre ville ou en pleine nature</p>
+            </div>
+            <div class="Barre_de_recherche">
+                <img id="i_position" src="./fontawesome-free-5.15.1-desktop/svgs/solid/map-marker-alt.svg" alt="icon position" /> 
+                <input type="search" name="recherher" id="Search">
+                <input type="submit" value="Rechercher" id="button"/>
+            </div>
+    
+            <div class="composant_filtre">
+                <span id="filtre">filtres</span>
+                <div id="economique" ><a href="#">Economique</a></div>
+                <div id="familial" ><a href="#">familial</a></div>
+                <div id="romantique" ><a href="#">Romantique</a></div>
+                <div id="animaux"><a href="#">Animaux autorisés</a></div>
+        
+            </div>
+     
+        </header>
+
         <div id="bloc_logements">
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
             <div id="Hebergements_a_Marseille">
@@ -79,31 +83,32 @@
             <img src="#" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
             <img src="#" alt="Parc Longchamp" title="Parc Longchamp">
         </div>
+
+        <footer>
+            <div id="A_propos">
+                <h3>A propos</h3>
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+            </div>
+            <div id="Nos_hebergements">
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li>charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
+                </ul>
+            </div>
+            <div id="Assistance">
+                <h3>Assistance</h3>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div>
+        </footer>
         
     </body>
-    <footer>
-        <div id="A_propos">
-            <h3>A propos</h3>
-            <ul>
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données et confidentialité</li>
-            </ul>
-        </div>
-        <div id="Nos_hebergements">
-            <h3>Nos hébergements</h3>
-            <ul>
-                <li>charte qualité</li>
-                <li>Soumettre votre hôtel</li>
-            </ul>
-        </div>
-        <div id="Assistance">
-            <h3>Assistance</h3>
-            <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
-            </ul>
-        </div>
-    </footer>
- 
+   
 </html>
