@@ -366,6 +366,67 @@ span
 }
 
 /* les activités */
+#Activite_a_Marseille /* Grand bloc flexbox en ligne(row) */
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.box_column
+{
+    display: flex;
+    flex-direction: column;
+}
+.box3
+{
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px gray;
+    background-color: white ;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.img_port_calanques /* Dimensions images */
+{
+    width: 302px;
+    height: 387px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+#img_pomègues /* dimension image */
+{
+    width: 302px;
+    height: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+#img_frioul
+{
+    width: 302px;
+    height: 109px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+#img_DameDeLaGarde
+{
+    width: 302px;
+    height: 139px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+#img_longchamp
+{
+    width: 302px;
+    height: 153px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
 
 
 /* III-Footer */
