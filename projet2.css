@@ -377,7 +377,7 @@ span
     display: flex;
     flex-direction: column;
 }
-.box3
+.box3 /* flexbox */
 {
     border: 1px solid gray;
     border-radius: 20px;
@@ -385,9 +385,11 @@ span
     background-color: white ;
     height: fit-content;
     width: fit-content;
-
 }
-
+.titres_box /* marge entre titres et box de chaque photos Activités */
+{
+    padding-left: 19px;
+}
 .img_port_calanques /* Dimensions images */
 {
     width: 302px;
@@ -404,14 +406,14 @@ span
     border-top-right-radius: 20px ;
 }
 
-#img_frioul
+#img_frioul /* dimension image */
 {
     width: 302px;
     height: 109px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px ;
 }
-#img_DameDeLaGarde
+#img_DameDeLaGarde /* dimension image */
 {
     width: 302px;
     height: 139px;
@@ -419,7 +421,7 @@ span
     border-top-right-radius: 20px ;
 }
 
-#img_longchamp
+#img_longchamp /* dimension image */
 {
     width: 302px;
     height: 153px;
@@ -428,16 +430,20 @@ span
 }
 
 
-
 /* III-Footer */
 footer
 {
     display: flex;
     flex-direction: row;
+    background-color: gray;  /* A modifier avec la vraie couleur */
 }
 footer ul
 {
     list-style-type: none;
-    display: flexbox;
-    color: grey;
+}
+.box4 /* FLEXBOX */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
