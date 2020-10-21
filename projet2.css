@@ -365,8 +365,9 @@ span
     padding-left: 21px;
 }
 
-/* les activités */
-#Activite_a_Marseille /* Grand bloc flexbox en ligne(row) */
+/* les activités à Marseille */
+
+#bloc_activites /* Flexbox mettre en ligne les box (row) */
 {
     display: flex;
     flex-direction: row;
@@ -446,4 +447,5 @@ footer ul
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-right: 20%;
 }
