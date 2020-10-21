@@ -248,7 +248,7 @@ nav a
    margin-left: 50px;
     
 }
-#Hebergements
+#titre_hebergements
 {
     padding-left: 41px;
 }
@@ -277,7 +277,6 @@ nav a
     background-color: white ;
     height: 200px;
     width: 236px;
-
 }
 .img_heberg
 {
@@ -285,7 +284,12 @@ nav a
     width: 237px;
     border-top-left-radius: 20px ;
     border-top-right-radius: 20px ;
-    
+   
+}
+
+.figcaption_logement
+{
+    padding-left: 17px;
 }
 
 span
@@ -294,7 +298,9 @@ span
     padding-bottom: 50px;
 }
 
-#Populaire /* Bloc populaire */
+/* Bloc populaire */
+
+#Populaire 
 {
     display: flex;
     flex-direction: column;
@@ -304,6 +310,34 @@ span
    border-radius: 20px;
    width: fit-content;
 }
+
+#titre_populaire
+{
+    padding-left: 38px;
+}
+
+#titre_icon_bloc
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#icon_chart /* déplacer icon en colonne + centrer verticalement */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#chart_line
+{
+    width: 22px;
+    height: 18px;
+    padding-right: 40px;
+}
+
+
 
 .img_pop
 {
@@ -326,10 +360,20 @@ span
     width: 343px;
 }
 
+.figcaption_populaire
+{
+    padding-left: 21px;
+}
+
 /* les activités */
 
 
 /* III-Footer */
+footer
+{
+    display: flex;
+    flex-direction: row;
+}
 footer ul
 {
     list-style-type: none;
