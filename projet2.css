@@ -41,13 +41,14 @@ nav a
     color: #000000;
 }
 
-nav ul::after
+nav ul::after /* ::After et ::Before Pseudo-élément : permettent d'insérer un élé. fantôme
+avant ou après de l'élé. ciblé */
 {
     content: "";
     display: table;
     clear: both;
 }
-nav a:hover 
+nav a:hover
 {
     color: #0065fc;
     border-top: 1px solid #0065fc; 
@@ -92,7 +93,6 @@ nav a
 
 .p2
 {
-    color: grey;
     font-size: 15px;
     margin-left: 56px; /* Ajustement bordure */
 
@@ -139,7 +139,7 @@ nav a
 
 /* Filtre */
 
-#filtre
+#titre_filtre
 {
     display: flex;
     flex-direction: row;
@@ -160,60 +160,34 @@ nav a
     margin-top: 31px;   /* Ajustement entre les textes */
 }
 
-
-
-#economique a
+.filtre
 {
     display: flex;
-    box-shadow: 0px 2px 5px gray;
-    list-style-type: none;
-    width: auto;
-    border-radius: 30px;
-    text-decoration: none;
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
-#familial a
+.filtre figcaption
 {
     display: flex;
-    box-shadow: 0px 2px 5px gray;
-    list-style-type: none;
-    width: auto;
-    border-radius: 30px;
+    flex-direction: column;
+    justify-content: center;
     text-decoration: none;
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    border: 1px solid  #F2F2F2;
+    border-radius: 30px;
+    width: fit-content;
+}
+.filtre img
+{
+    width: 18px;
+    height: 14px;
 }
 
-#romantique a
+.icone_filtre
 {
     display: flex;
-    box-shadow: 0px 2px 5px gray;
-    list-style-type: none;
-    width: auto;
-    border-radius: 30px;
-    text-decoration: none;
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+    flex-direction: column;
+    justify-content: center;
 
-#animaux a
-{
-    display: flex;
-    box-shadow: 0px 2px 5px gray;
-    list-style-type: none;
-    text-decoration: none;
-    width: auto;
-    border-radius: 30px;
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
-
 /* texte + icon */
 #icon_info
 {
@@ -249,8 +223,8 @@ nav a
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid gray;
-    background-color: gray;
+    border: 1px solid  #F2F2F2;
+    background-color:  #F2F2F2;
    border-radius: 20px;
    width: fit-content;
    margin-right: 40px;
@@ -276,9 +250,9 @@ nav a
 
 .box
 { 
-    border: 1px solid gray;
+    border: 1px solid  #F2F2F2;
     border-radius: 20px;
-    box-shadow: 1px 1px 1px gray;
+    box-shadow: 1px 1px 1px  #F2F2F2;
     padding: 10px;
     padding-top: 5px;
     padding-left: 5px;
@@ -314,8 +288,8 @@ span /* "Afficher plus" */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid gray;
-    background-color: gray;
+    border: 1px solid  #F2F2F2;
+    background-color:  #F2F2F2;
    border-radius: 20px;
    width: fit-content;
 }
@@ -359,9 +333,9 @@ span /* "Afficher plus" */
 .box2
 {
     display: flex;
-    border: 1px solid gray;
+    border: 1px solid  #F2F2F2;
     border-radius: 20px;
-    box-shadow: 1px 1px 1px gray;
+    box-shadow: 1px 1px 1px  #F2F2F2;
     padding-top: 5px;
     padding-left: 5px;
     padding-bottom: 5px;
@@ -395,9 +369,9 @@ span /* "Afficher plus" */
 }
 .box3 /* flexbox */
 {
-    border: 1px solid gray;
+    border: 1px solid  #F2F2F2;
     border-radius: 20px;
-    box-shadow: 1px 1px 1px gray;
+    box-shadow: 1px 1px 1px  #F2F2F2;
     background-color: white ;
     height: fit-content;
     width: fit-content;
@@ -451,7 +425,7 @@ footer
 {
     display: flex;
     flex-direction: row;
-    background-color: gray;  /* A modifier avec la vraie couleur */
+    background-color:  #F2F2F2;  /* A modifier avec la vraie couleur */
 }
 footer ul
 {
