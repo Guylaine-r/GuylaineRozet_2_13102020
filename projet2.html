@@ -12,18 +12,19 @@
     <body>
 
         <header>
-            
-            <img id="logo" src="./images/logo/Reservia@3x.png" alt="logo Reservia" />
-            
-        
-            <nav> <!-- nav d'escription du menu -->
-                <ul id="menu">    
-                    <li><a href="#Hebergements">Hébergements</a></li> <!-- ancre pour mener directement à la sertion de la page -->
-                    <li><a href="#Activites">Activités</a></li>  <!-- ancre pour mener directement à la sertion de la page -->
-                    <li><a href="#">S'incrire</a></li> <!-- Mis ID pour isoler "s'incrire" -->
-                </ul>
-            </nav>
+            <div class="bloc_logo_menu">
 
+                <img id="logo" src="./images/logo/Reservia@3x.png" alt="logo Reservia" />
+        
+                <nav> <!-- nav d'escription du menu -->
+                    <ul id="menu">    
+                        <li class="menu_list"><a class="menu_ancre" href="#Hebergements">Hébergements</a></li> <!-- ancre pour mener directement à la sertion de la page -->
+                        <li class="menu_list"><a class="menu_ancre" href="#Activites">Activités</a></li>  <!-- ancre pour mener directement à la sertion de la page -->
+                        <li class="menu_list" ><strong><a id="inscription" href="#">S'incrire</a></strong></li> <!-- Mis ID pour isoler "s'incrire" -->
+                    </ul>
+                </nav>
+            </div>
+            
             <section id="texte_accroche"> <!-- TEXTE apres titre Reservia -->
                 <p class="p1"> Trouvez votre hébergement pour des vacances de rêve </p> <!-- Mettre un autre "id" pour separer car texte change ? -->
                 <p class="p2"> En plein centre ville ou en pleine nature</p>
@@ -36,10 +37,10 @@
             </div>
     
             <div class="composant_filtre">
-                <span id="titre_filtre">filtres</span>
+                <div id="titre_filtre"><strong>filtres</strong></div>
                 <figure class="filtre">
                     <div class="icone_filtre">
-                        <img src="./fontawesome-free-5.15.1-desktop/svgs/solid/money-bill-wave.svg" alt="">
+                        <img  class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/money-bill-wave.svg" alt="">
                     </div>
                     <figcaption>
                         <a href="#">Economique</a>
@@ -47,7 +48,7 @@
                 </figure>
                 <figure class="filtre">
                     <div class="icone_filtre">
-                        <img src="./fontawesome-free-5.15.1-desktop/svgs/solid/child.svg" alt="">
+                        <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/child.svg" alt="">
                     </div>
                     <figcaption>
                         <a href="#">Familial</a>
@@ -55,7 +56,7 @@
                 </figure>
                 <figure class="filtre">
                     <div class="icone_filtre">
-                        <img src="./fontawesome-free-5.15.1-desktop/svgs/solid/heart.svg" alt="">
+                        <img  class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/heart.svg" alt="">
                     </div>
                     <figcaption>
                         <a href="#">Romantique</a>
@@ -63,7 +64,7 @@
                 </figure>
                 <figure class="filtre">
                     <div class="icone_filtre">
-                        <img src="./fontawesome-free-5.15.1-desktop/svgs/solid/dog.svg" alt="">
+                        <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/dog.svg" alt="">
                     </div>
                     <figcaption>
                         <a href="#">Animaux autorisés</a>
@@ -73,9 +74,13 @@
         </header>
 
         <!-- texte + icon -->
-        <figure>
-            <img  id="icon_info" src="./fontawesome-free-5.15.1-desktop/svgs/solid/info.svg" alt="" />
-            <figcaption id="text">Plus de 500 logements sont disponibles dans cette ville</figcaption>
+        <figure id="bloc_info">
+            <div id="icon_info_container">
+                <div id="icon_info">
+                    <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/info.svg" alt="" />
+                </div>
+            </div>
+            <figcaption id="text"><p>Plus de 500 logements sont disponibles dans cette ville</p></figcaption>
         </figure>
 
         <div id="logement">
