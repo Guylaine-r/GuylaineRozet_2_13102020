@@ -1,6 +1,8 @@
-body
+boby /* A faire avec Aurélien */
 {
-    font-family: Raleway;
+    font-family: "Raleway";
+    src: url('Raleway-Black.ttf');
+
 }
 
 /* I- Header */
@@ -315,7 +317,6 @@ figcaption a
 {
     display: flex;
     flex-direction: row;
-    padding-left: 17px;
 }
 
 .star
@@ -324,6 +325,14 @@ figcaption a
     height: 13px;
     padding-right: 2px;
     filter: invert(40%) sepia(75%) saturate(7500%) hue-rotate(210deg) brightness(100%) contrast(104%);
+}
+
+.star_gray
+{
+    width: 13px;
+    height: 13px;
+    padding-right: 2px;
+    filter: invert(100%) sepia(4%) saturate(111%) hue-rotate(231deg) brightness(116%) contrast(90%);
 }
 
 .texte_hebergement /* texte dans le bloc Hebergement (afficher plus) */
@@ -419,11 +428,6 @@ figcaption a
 {
     padding-left: 21px;
     padding-right: 50px;
-}
-.box2_star
-{
-    display: flex;
-    flex-direction: row;
 }
 
 /* les activités à Marseille */
