@@ -124,9 +124,8 @@ body
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 30px;
     padding-top: 15px;
-    margin-left: 63px; /* Ajustement bordure */
+    margin-left: 53px; /* Ajustement bordure */
 }
 
 .composant_filtre
@@ -210,7 +209,7 @@ figcaption a
     border-radius: 50%;
     border: 1px solid #F2F2F2;
     padding: 2px 9px;
-    margin-left: 59px; /* Ajustement bordure */
+    margin-left: 10px; /* Ajustement bordure */
 }
 
 #icon_info img
@@ -279,8 +278,8 @@ figcaption a
     padding-left: 5px;
     padding-right: 5px;
     background-color: white ;
-    height: 200px;
-    width: 236px;
+    height: fit-content;
+    width: fit-content;
 }
 
 .box a
@@ -310,6 +309,21 @@ figcaption a
 .figcaption_logement
 {
     padding-left: 17px;
+}
+
+.box_star
+{
+    display: flex;
+    flex-direction: row;
+    padding-left: 17px;
+}
+
+.star
+{
+    width: 13px;
+    height: 13px;
+    padding-right: 2px;
+    filter: invert(40%) sepia(75%) saturate(7500%) hue-rotate(210deg) brightness(100%) contrast(104%);
 }
 
 .texte_hebergement /* texte dans le bloc Hebergement (afficher plus) */
@@ -383,7 +397,8 @@ figcaption a
     padding-left: 5px;
     padding-bottom: 5px;
     background-color: white;
-    width: 343px;
+    width: 344px;
+    height: fit-content;
 }
 
 .box2 a
@@ -403,7 +418,12 @@ figcaption a
 .figcaption_populaire
 {
     padding-left: 21px;
-    padding-right: 21px;
+    padding-right: 50px;
+}
+.box2_star
+{
+    display: flex;
+    flex-direction: row;
 }
 
 /* les activités à Marseille */
