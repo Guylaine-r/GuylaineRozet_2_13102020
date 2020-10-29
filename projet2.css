@@ -139,6 +139,7 @@ body
     list-style-type: none;
     padding-top: 10px;
     margin-top: 31px;   /* Ajustement entre les textes */
+    
 }
 
 .filtre
@@ -147,10 +148,11 @@ body
     border: 1px solid  #F2F2F2;
     border-radius: 30px;
 }
-
 .filtre:hover /* changement d'effet au survole souris */
 {
-    background-color: #DEEBFF;
+    -webkit-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
+    -moz-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
+    box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
 }
 
 .filtre figcaption
