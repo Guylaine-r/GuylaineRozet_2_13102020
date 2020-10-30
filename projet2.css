@@ -1,7 +1,15 @@
-boby /* A faire avec Aurélien */
+@font-face
 {
-    font-family: "Raleway";
-    src: url('Raleway-Black.ttf');
+    font-family: Raleway;
+    src: url('./static/Raleway-Medium.ttf');
+}
+
+body 
+{
+    font-family: Raleway;
+    width: fit-content;
+    margin: auto;
+    font-size: 14px;
 
 }
 
@@ -392,7 +400,7 @@ figcaption a
 
 .img_pop
 {
-    height: 134px;
+    height: 135px;
     width: 127px;
     border-top-left-radius: 20px ;
     border-bottom-left-radius: 20px ;
