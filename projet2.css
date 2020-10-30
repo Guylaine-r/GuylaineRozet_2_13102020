@@ -99,7 +99,7 @@ body
     width: 13px;
     height: 18px;
     border-top-left-radius: 10px;
-    border-bottom-left-radius:10px ;
+    border-bottom-left-radius: 10px ;
     background-color:#F2F2F2;
     padding: 16px;
 }
@@ -108,8 +108,8 @@ body
 {
     cursor: pointer;
     border: 1px #F2F2F2 solid;
-    width: 234px;
-    height: 50px;
+    width: 234px; /* En % */
+    height: 50px; /* en % */
     font-size: 15px;
 }
 
@@ -119,7 +119,7 @@ body
     text-align: center;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    width: 134px;
+    width: 134px; /* EN % */
     color: #ffffff;
     background-color: #0065fc;
     border-color: #0065fc;
@@ -408,6 +408,8 @@ figcaption a
 
 .box2
 {
+    display: flex;
+    flex-direction: row;
     border: 1px solid  #F2F2F2;
     border-radius: 20px;
     padding-top: 5px;
@@ -420,7 +422,7 @@ figcaption a
 
 .box2 a
 {
-    display: flex;
+    width: fit-content;
     text-decoration: none;
     color: black;
 }
@@ -437,6 +439,12 @@ figcaption a
     padding-left: 21px;
     padding-right: 50px;
 }
+/*
+.box_lien
+{
+    display: flex;
+    flex-direction: column;
+} */
 
 /* les activités à Marseille */
 #Activite_a_Marseille
