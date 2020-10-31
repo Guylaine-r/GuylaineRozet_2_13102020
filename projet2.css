@@ -10,7 +10,6 @@ body
     width: fit-content;
     margin: auto;
     font-size: 14px;
-
 }
 
 /* I- Header */
@@ -135,7 +134,9 @@ body
     flex-direction: column;
     justify-content: center;
     padding-top: 15px;
+    padding-bottom: 15px;
     margin-left: 53px; /* Ajustement bordure */
+    font-size: 20px;
 }
 
 .composant_filtre
@@ -156,6 +157,7 @@ body
     display: flex;
     border: 1px solid  #F2F2F2;
     border-radius: 30px;
+    padding-right: 10px;
 }
 .filtre:hover /* changement d'effet au survole souris */
 {
@@ -178,10 +180,15 @@ figcaption a
     text-decoration: none;
     color: black;
 }
+
+.taille_filtre
+{
+    font-size: 18px;
+}
 .filtre img
 {
-    width: 18px;
-    height: 14px;
+    width: 26px;
+    height: 22px;
 }
 
 .icone_filtre
@@ -224,7 +231,8 @@ figcaption a
 
 #icon_info img
 {
-    width: 4px;
+    width: 5px;
+    padding-top: 2px; /* ajustement bordure top */
 
 }
 
@@ -263,7 +271,7 @@ figcaption a
 #Hebergements /* Titre + ancre Hebergements */
 {
     padding-left: 41px;
-    padding-top: 47px;
+    padding-top: 25px;/* ajustement bordure "top" (compensation)*/
 }
 
 
@@ -346,9 +354,9 @@ figcaption a
 
 .texte_hebergement /* texte dans le bloc Hebergement (afficher plus) */
 {
-    margin-top: 43px;
-    margin-bottom: 50px;
-    margin-left: 45px;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    margin-left: 40px;
     margin-right: auto;
     text-decoration: none;
     color: black;
@@ -357,7 +365,12 @@ figcaption a
 
 .texte_hebergement:hover /* Taille de police ==> effet survol */
 {
-    font-size: 17px;
+    font-size: 18px;
+}
+.texte_hebergement
+{
+    font-size: 20px;
+    padding-top: 0px;
 }
 
 /* Bloc populaire */
@@ -376,7 +389,7 @@ figcaption a
 #titre_populaire
 {
     padding-left: 38px;
-    padding-top: 47px;
+    padding-top: 25px; /* Ajustement bordure "top" (compensation) */
 }
 
 #titre_icon_bloc
@@ -395,9 +408,10 @@ figcaption a
 
 #chart_line
 {
-    width: 22px;
-    height: 18px;
+    width: 32px;
+    height: 23px;
     padding-right: 40px;
+    padding-top: 25px; /* Ajustement bordure "top" (compensation) */
 }
 
 .img_pop
@@ -420,6 +434,8 @@ figcaption a
     background-color: white;
     width: 344px;
     height: fit-content;
+    margin-bottom: 35px;
+    margin-top: 0;
 }
 
 .box2 a
@@ -440,6 +456,7 @@ figcaption a
     padding-left: 21px;
     padding-right: 50px;
 }
+
 
 
 /* les activités à Marseille */
@@ -545,7 +562,7 @@ footer ul
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 25%;
+    width: 28%; /* Ajustement des bordures entre les blocs */
     padding-top: 50px;
     padding-bottom: 55px;
 }
@@ -556,10 +573,16 @@ footer * /* "*" tous les enfants héritent... */
     color: black;
 }
 
+.titre_footer
+{
+    font-size: 19px;
+}
+
 .lien_footer /* Espacement entre liste à puce/ lien */
 {
-    margin-top: 21px;
-    margin-bottom: 21px ;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 18px;
 }
 
 .lien_footer:hover /* taille police ==> effet au survol */
