@@ -279,12 +279,14 @@ figcaption a
 {
     display: flex;
     flex-direction: row;
+    margin-right: 40px;
 }
 
 #Part2 /* flexbox part2 (bloc hébergement) */
 {
     display: flex;
     flex-direction: row;
+    margin-right: 40px;
 }
 
 .box
@@ -300,6 +302,7 @@ figcaption a
     background-color: white ;
     height: fit-content;
     width: fit-content;
+    margin-right: 0;
 }
 
 .box a
@@ -329,6 +332,16 @@ figcaption a
 .figcaption_logement
 {
     padding-left: 17px;
+}
+
+.figcaption_logement p
+{
+    line-height: 0;
+}
+
+.figcaption_logement h3
+{
+    margin-bottom: 0;
 }
 
 .box_star
@@ -380,7 +393,6 @@ figcaption a
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border: 1px solid  #F2F2F2;
     background-color:  #F2F2F2;
     border-radius: 20px;
@@ -435,8 +447,8 @@ figcaption a
     background-color: white;
     width: 344px;
     height: fit-content;
-    margin-bottom: 35px;
-    margin-top: 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .box2 a
@@ -458,7 +470,23 @@ figcaption a
     padding-right: 50px;
 }
 
+.figcaption_populaire p
+{
+    line-height: 0;
+}
 
+.figcaption_populaire h3
+{
+    margin-bottom: 0;
+}
+
+.box_star2
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+
+}
 
 /* les activités à Marseille */
 #Activite_a_Marseille
@@ -493,6 +521,9 @@ figcaption a
     background-color: white ;
     height: fit-content;
     width: fit-content;
+    margin-right: 20px;
+    margin-bottom: 25px;
+
 }
 
 .box3:hover /* changement d'effet au survol */
@@ -563,7 +594,7 @@ footer ul
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 28%; /* Ajustement des bordures entre les blocs */
+    width: 35%; /*Ajustement des bordures entre les blocs*/
     padding-top: 50px;
     padding-bottom: 55px;
 }
