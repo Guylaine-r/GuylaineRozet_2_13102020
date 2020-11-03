@@ -20,7 +20,7 @@
                     <ul id="menu">    
                         <li class="menu_list"><a class="menu_ancre" href="#Hebergements">Hébergements</a></li> <!-- ancre pour mener directement à la sertion de la page -->
                         <li class="menu_list"><a class="menu_ancre" href="#Activites">Activités</a></li>  <!-- ancre pour mener directement à la sertion de la page -->
-                        <li class="menu_list" ><strong><a id="inscription" href="#">S'inscrire</a></strong></li> <!-- Mis ID pour isoler "s'incrire" -->
+                        <li class="menu_list" ><a id="inscription" href="#">S'inscrire</a></li> <!-- Mis ID pour isoler "s'incrire" -->
                     </ul>
                 </nav>
             </div>
@@ -32,46 +32,46 @@
 
             <div class="Barre_de_recherche">
                 <img id="i_position" src="./fontawesome-free-5.15.1-desktop/svgs/solid/map-marker-alt.svg" alt="icon position" /> 
-                <input type="search" name="recherher" id="Search"> <!-- Mettre Marseille -->
+                <input id="Search" type="search" value=" Marseille, France" name="recherher" > <!-- Mettre Marseille -->
                 <input type="submit" value="Rechercher" id="button"/>
             </div>
-    
-            <div class="composant_filtre">
-                <div id="titre_filtre"><strong>Filtres</strong></div>
-                <figure class="filtre">
-                    <div class="icone_filtre">
-                        <img  class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/money-bill-wave.svg" alt="">
-                    </div>
-                    <figcaption>
-                        <a class="taille_filtre" href="#"><strong>Economique</strong></a>
-                    </figcaption> 
-                </figure>
-                <figure class="filtre">
-                    <div class="icone_filtre">
-                        <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/child.svg" alt="">
-                    </div>
-                    <figcaption>
-                        <a class="taille_filtre" href="#"><strong>Familial</strong></a>
-                    </figcaption>
-                </figure>
-                <figure class="filtre">
-                    <div class="icone_filtre">
-                        <img  class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/heart.svg" alt="">
-                    </div>
-                    <figcaption>
-                        <a class="taille_filtre" href="#"><strong>Romantique</strong></a>
-                    </figcaption>
-                </figure>
-                <figure class="filtre">
-                    <div class="icone_filtre">
-                        <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/dog.svg" alt="">
-                    </div>
-                    <figcaption>
-                        <a class="taille_filtre" href="#"><strong> Animaux autorisés</strong></a>
-                    </figcaption>
-                </figure>
-            </div>
         </header>
+
+        <div class="composant_filtre">
+            <div id="titre_filtre">Filtres</div>
+            <figure class="filtre">
+                <div class="icone_filtre">
+                    <img  class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/money-bill-wave.svg" alt="">
+                </div>
+                <figcaption>
+                    <a class="taille_filtre" href="#">Economique</a>
+                </figcaption> 
+            </figure>
+            <figure class="filtre">
+                <div class="icone_filtre">
+                    <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/child.svg" alt="">
+                </div>
+                <figcaption>
+                    <a class="taille_filtre" href="#">Familial</a>
+                </figcaption>
+            </figure>
+            <figure class="filtre">
+                <div class="icone_filtre">
+                    <img  class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/heart.svg" alt="">
+                </div>
+                <figcaption>
+                    <a class="taille_filtre" href="#">Romantique</a>
+                </figcaption>
+            </figure>
+            <figure class="filtre">
+                <div class="icone_filtre">
+                    <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/dog.svg" alt="">
+                </div>
+                <figcaption>
+                    <a class="taille_filtre" href="#">Animaux autorisés</a>
+                </figcaption>
+            </figure>
+        </div>
 
         <!-- texte + icon -->
         <figure id="bloc_info">
@@ -201,9 +201,7 @@
                         </figcaption>
                     </figure>
                 </div> 
-                <a class="texte_hebergement" href="#">
-                    <strong>Afficher plus</strong>
-                </a>
+                <a class="texte_hebergement" href="#">Afficher plus</a>
             </div>
            
             <div id="Populaire">
@@ -346,7 +344,7 @@
         <footer>
             <div class="box4">
                 <ul>
-                    <li class="titre_footer"><strong>A propos</strong></li>
+                    <li class="titre_footer">A propos</li>
                     <li class="lien_footer"><a  href="#" >Fonctionnement du site</a></li>
                     <li class="lien_footer"><a href="#">Conditions générales de vente</a></li>
                     <li class="lien_footer"><a href="#">Données et confidentialité</a></li>
@@ -354,14 +352,14 @@
             </div>
             <div class="box4">
                 <ul>
-                    <li class="titre_footer"><strong>Nos hébergements</strong></li>
+                    <li class="titre_footer">Nos hébergements</li>
                     <li class="lien_footer"><a href="#">Charte qualité</a></li>
                     <li class="lien_footer"><a href="#">Soumettre votre hôtel</a></li>
                 </ul>
             </div>
             <div class="box4">
                 <ul>
-                    <li class="titre_footer"><strong>Assistance</strong></li>
+                    <li class="titre_footer">Assistance</li>
                     <li class="lien_footer"><a href="#">Centre d'aide</a></li>
                     <li class="lien_footer"><a href="#">Nous contacter</a></li>
                 </ul>
