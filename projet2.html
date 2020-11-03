@@ -6,6 +6,7 @@
         <meta name="description" content=" Reservia est une petite entreprise proposant un outil de planification de vacances. 
         Reservia permet de trouver des hébergements et des activités dans la ville de leur choix ">
         <link rel="stylesheet" href="projet2.css" />
+        <link rel="stylesheet" href="fontawesome/css/all.css">
         <title>Reservia</title>
     </head>
     
@@ -25,13 +26,13 @@
                 </nav>
             </div>
             
-            <section id="texte_accroche"> <!-- TEXTE apres titre Reservia -->
+            <section> <!-- TEXTE apres titre Reservia -->
                 <p class="p1"> Trouvez votre hébergement pour des vacances de rêve </p> <!-- Mettre un autre "id" pour separer car texte change ? -->
                 <p class="p2"> En plein centre ville ou en pleine nature</p>
             </section>
 
             <div class="Barre_de_recherche">
-                <img id="i_position" src="./fontawesome-free-5.15.1-desktop/svgs/solid/map-marker-alt.svg" alt="icon position" /> 
+                <i class="fas fa-map-marker-alt fa-lg "></i>
                 <input id="Search" type="search" value=" Marseille, France" name="recherher" > <!-- Mettre Marseille -->
                 <input type="submit" value="Rechercher" id="button"/>
             </div>
@@ -40,32 +41,32 @@
         <div class="composant_filtre">
             <div id="titre_filtre">Filtres</div>
             <figure class="filtre">
-                <div class="icone_filtre">
-                    <img  class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/money-bill-wave.svg" alt="">
+                <div class="icone_filtre1">
+                    <i class="fas fa-money-bill-wave fa-lg"></i>
                 </div>
                 <figcaption>
                     <a class="taille_filtre" href="#">Economique</a>
                 </figcaption> 
             </figure>
             <figure class="filtre">
-                <div class="icone_filtre">
-                    <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/child.svg" alt="">
+                <div class="icone_filtre2">
+                    <i class="fas fa-child fa-lg"></i>
                 </div>
                 <figcaption>
                     <a class="taille_filtre" href="#">Familial</a>
                 </figcaption>
             </figure>
             <figure class="filtre">
-                <div class="icone_filtre">
-                    <img  class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/heart.svg" alt="">
+                <div class="icone_filtre2">
+                    <i class="fas fa-heart fa-lg"></i>
                 </div>
                 <figcaption>
                     <a class="taille_filtre" href="#">Romantique</a>
                 </figcaption>
             </figure>
             <figure class="filtre">
-                <div class="icone_filtre">
-                    <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/dog.svg" alt="">
+                <div class="icone_filtre1">
+                    <i class="fas fa-dog fa-lg"></i>
                 </div>
                 <figcaption>
                     <a class="taille_filtre" href="#">Animaux autorisés</a>
@@ -77,7 +78,7 @@
         <figure id="bloc_info">
             <div id="icon_info_container">
                 <div id="icon_info">
-                    <img class="color_icon" src="./fontawesome-free-5.15.1-desktop/svgs/solid/info.svg" alt="" />
+                    <i class="fas fa-info fa-xs"></i>
                 </div>
             </div>
             <figcaption id="text"><p>Plus de 500 logements sont disponibles dans cette ville</p></figcaption>
@@ -96,11 +97,11 @@
                                 <h3>Auberge de la Canabière</h3>
                                 <p>Nuit à partir de <strong>25€</strong></p>
                                 <div class="box_star">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star_gray" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
                                 </div>
                             </a>
                         </figcaption>  
@@ -114,11 +115,11 @@
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de <strong>52€</strong></p>
                                 <div class="box_star">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
                                 </div>
                             </a>
                         </figcaption>
@@ -133,11 +134,11 @@
                                 <h3>Hôtel des mouettes</h3>
                                 <p>Nuit à partir de <strong>76€</strong></p>
                                 <div class="box_star">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star_gray" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
                                 </div>
                             </a> 
                         </figcaption>
@@ -153,13 +154,14 @@
                                 <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de <strong>46€</strong></p>
                                 <div class="box_star">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star_gray" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star_gray" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
                                 </div>
                             </a>
+
                         </figcaption>
                     </figure>
 
@@ -172,11 +174,11 @@
                                 <h3>Auberge le Panier</h3>
                                 <p>Nuit à partir de <strong>23€</strong></p>
                                 <div class="box_star">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star_gray" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
                                 </div>
                             </a> 
                         </figcaption>
@@ -191,11 +193,11 @@
                                 <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de <strong>96€</strong></p>
                                 <div class="box_star">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                    <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
+                                    <i class="fas fa-star fa-sm"></i>
                                 </div>
                             </a>
                         </figcaption>
@@ -208,9 +210,7 @@
                 <div id="titre_icon_bloc">
                     <h2 id="titre_populaire">Les plus populaires</h2>
                     <div id="icon_chart" >
-
-                        <img id="chart_line" src="./fontawesome-free-5.15.1-desktop/svgs/solid/chart-line.svg" alt="" /> <!-- Icon Chart_line -->
-
+                        <i class="fas fa-chart-line fa-2x"></i>
                     </div>
                 </div>
 
@@ -223,11 +223,11 @@
                             <h3>Hôtel le soleil du matin</h3>
                             <p> Nuit à partir de <strong>128€</strong></p>
                             <div class="box_star2">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
                             </div>
                         </a>  
                     </figcaption>
@@ -242,11 +242,11 @@
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de <strong>72€</strong></p>
                             <div class="box_star2">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star_gray" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
                             </div>
                         </a>
                     </figcaption>
@@ -261,11 +261,11 @@
                             <h3>Hôtel Tout bleu et blanc</h3>
                             <p>Nuit à partir de <strong>68€</strong></p>
                             <div class="box_star2">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
-                                <img class="star_gray" src="./fontawesome-free-5.15.1-desktop/svgs/solid/star.svg" alt="">
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
+                                <i class="fas fa-star fa-sm"></i>
                             </div>
                         </a> 
                     </figcaption> 
