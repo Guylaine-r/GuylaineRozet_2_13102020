@@ -112,10 +112,10 @@ body
 
 .fa-map-marker-alt
 {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px ;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px ;
     background-color:#F2F2F2;
-    padding: 16px;
+    padding: 18px 16px 16px 18px;
     padding-top: 18px;
 }
 
@@ -133,8 +133,8 @@ body
 {
     display: inline-block; /* Voir à quoi cela sert ??? */
     text-align: center;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
     width: 9.31%;
     color: #ffffff;
     background-color: #0065fc;
@@ -142,9 +142,6 @@ body
     cursor: pointer;
     font-size: 17px;
 }
-
-
-
 
 
 /* II- Body */
@@ -166,7 +163,7 @@ body
 .composant_filtre
 {
     display: flex;
-    justify-content: row;
+    flex-direction: row;
     width: auto;
     background-color: #ffffff;
     border-radius: 0.5rem;
@@ -181,6 +178,8 @@ body
     border: 1px solid #F2F2F2;
     border-radius: 30px;
     padding-right: 10px;
+    margin-right: 0;
+    margin-left: 30px;
 }
 .filtre:hover /* changement d'effet au survole souris */
 {
@@ -419,17 +418,15 @@ figcaption a
     color: black;
     height: 17px;
     font-weight: bold;
+    font-size: 20px;
+    padding-top: 0px;
 }
 
 .texte_hebergement:hover /* Taille de police ==> effet survol */
 {
     font-size: 18px;
 }
-.texte_hebergement
-{
-    font-size: 20px;
-    padding-top: 0px;
-}
+
 
 /* Bloc populaire */
 
@@ -441,6 +438,7 @@ figcaption a
     background-color:  #F2F2F2;
     border-radius: 20px;
     width: fit-content;
+    margin-right: 50px;
 }
 
 #titre_populaire
@@ -465,8 +463,6 @@ figcaption a
 
 .fa-chart-line
 {
-    width: 32px;
-    height: 23px;
     padding-right: 40px;
     padding-top: 25px; /* Ajustement bordure "top" (compensation) */
 }
@@ -490,7 +486,7 @@ figcaption a
     padding-left: 5px;
     padding-bottom: 2px; /* compensation car lien prend 3px en bottom */
     background-color: white;
-    width: 65%;
+    width: 348px;
     height: fit-content;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -549,6 +545,7 @@ figcaption a
 {
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
 }
 
 .box_column a
@@ -590,7 +587,7 @@ figcaption a
     object-fit: cover;
 }
 
-#img_pomègues /* dimension image */
+#img_pomegues /* dimension image */
 {
     width: 302px;
     height: 180px;
@@ -671,4 +668,249 @@ footer * /* "*" tous les enfants héritent... */
 .lien_footer:hover /* taille police ==> effet au survol */
 {
     font-size: 17px;
+}
+
+@media screen and (max-width: 375px) /*Iphone 8*/
+{
+    #logo
+    {
+        padding-top: 32px;
+        height: 45px;
+        width: 95px;
+        margin-left: 18px; /* Ajustement bordure */
+    }
+
+    .bloc_logo_menu
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu
+    {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        float: right;
+        color: black;
+    }
+
+    .menu_list
+    {
+        padding-bottom: 10px;
+        padding-right: 38px ;
+        padding-left: 38px;
+        margin-top: 40px;
+        padding-top: 0;
+    }
+
+    .menu_list:hover .menu_ancre
+    {
+        color:#0065FC;
+    }
+
+    .menu_ancre 
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #inscription
+    {
+        text-decoration: none;
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    .menu_list:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        border-radius: 0;
+    }
+
+    /* Texte */
+    .p1
+    {
+        word-wrap: break-word;
+        
+        font-weight:bold;
+        font-size: 22px;
+        margin-left: 18px; /* Ajustement bordure */
+    }
+
+    .p2
+    {
+        font-size: 15px;
+        margin-left: 18px; /* Ajustement bordure */
+
+    }
+
+    /* Barre de recherche */
+
+    .Barre_de_recherche
+    {
+        display: flex;
+        margin-left: 18px; /* Ajustement bordure */
+    }
+    
+    #button
+    {
+        display: inline-block; /* Voir à quoi cela sert ??? */
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        width: 51px;
+        color: #ffffff;
+        background-color: #0065fc;
+        border-color: #0065fc;
+        cursor: pointer;
+    }
+    
+    /* logement */
+    #logement
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    /* Populaire */
+    #Populaire 
+    {
+        display: flex;
+        flex-direction: column;
+        background-color:  #F2F2F2;
+        border: none;
+        border-radius: 0;
+        width: fit-content;
+        float: left;
+        padding-bottom: 36px;
+        margin-right: 0;
+    }
+    .box2
+    {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid  #F2F2F2;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 2px; /* compensation car lien prend 3px en bottom */
+        background-color: white;
+        width: 334px;
+        height: fit-content;
+        margin-top: 15px;
+        margin-bottom: 0;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    
+    .figcaption_populaire
+    {
+        padding-left: 21px;
+        padding-right: 40px;
+    }
+    
+    #titre_populaire
+    {
+        padding-left: 18px;
+        padding-top: 25px; /* Ajustement bordure "top" (compensation) */
+    }
+    
+    #titre_icon_bloc
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #icon_chart /* déplacer icon en colonne + centrer verticalement */
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .fa-chart-line
+    {
+        padding-right: 10px;
+        padding-top: 25px; /* Ajustement bordure "top" (compensation) */
+    }
+    
+
+    
+    /* bloc_logement (hébergement à marseille et les plus populaires) */
+    #Hebergements /* Titre + ancre Hebergements */
+    {
+        padding-left: 10px;
+        padding-top: 25px;/* ajustement bordure "top" (compensation)*/
+    }
+
+    #bloc_hebergement
+    {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        background-color: white;
+        border: none;
+        margin-left: 21px;
+    }
+
+    #Part1 /* flexbox part1 (bloc hébergement) */
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        
+    }
+    
+    #Part2 /* flexbox part2 (bloc hébergement) */
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+       
+    }
+    
+    .box
+    { 
+        border: 1px solid  #F2F2F2;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px  #F2F2F2;
+        padding: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: white ;
+        height: fit-content;
+        width: fit-content;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .img_heberg
+    {
+        height: 114px;
+        width: 325px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+    .texte_hebergement /* texte dans le bloc Hebergement (afficher plus) */
+    {
+        margin-top: 25px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: auto;
+        text-decoration: none;
+        color: black;
+        height: 17px;
+        font-weight: bold;
+        font-size: 16px;
+        padding-top: 0px;
+    }
+   
+
+
 }
