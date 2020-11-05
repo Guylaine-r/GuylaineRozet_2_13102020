@@ -759,6 +759,12 @@ footer * /* "*" tous les enfants héritent... */
     }
 
     /* Menu Responsive*/
+
+    #menu_responsive
+    {
+        display: flex;
+        flex-direction: row;
+    }
     #menu_respo
     {
         margin-top: 0;
@@ -777,21 +783,11 @@ footer * /* "*" tous les enfants héritent... */
         margin-top: 30px;
         padding-top: 0;
     }
-    .menu_ancre 
-    {
-        text-decoration: none;
-        color: black;
-    }
-
-    .menu_list_responsive:hover .menu_ancre
-    {
-        color:#0065FC;
-    }
 
     .menu_list_responsive:hover
     {
-        border-top: 4px solid #0065FC;
-        border-radius: 5px;
+        border-bottom: 2px solid #0065FC;
+        border-radius: 0px;
     }
     /* Texte */
     .p1
