@@ -13,10 +13,33 @@
     <body>
 
         <header>
-            <div class="bloc_logo_menu">
+            <div id="first_bloc_responsive"> <!-- Responsive Iphone -->
+                <div id="logo_inscrip">
+                    <img id="logo_responsive" src="./images/logo/Reservia@3x.png" alt="logo Reservia" />
 
+                    <nav id="ins_respo">
+                        <ul>
+                            <li id="list_respo" ><a href="#">S'inscrire</a></li>
+                        </ul>
+                        
+                    </nav>
+
+                </div>
+            </div>
+
+            <div id="menu_responsive"> <!-- RESPONSIVE MENU (Iphone) -->
+                <nav>
+                    <ul id="menu_respo">
+                        <li class="menu_list_responsive"><a class="menu_ancre" href="#Hebergements">Hébergements</a></li> <!-- ancre pour mener directement à la sertion de la page -->
+                        <li class="menu_list_responsive"><a class="menu_ancre" href="#Activites">Activités</a></li>  <!-- ancre pour mener directement à la sertion de la page --> 
+                    </ul>
+
+                </nav>
+            </div>
+
+            <div class="bloc_logo_menu">
                 <img id="logo" src="./images/logo/Reservia@3x.png" alt="logo Reservia" />
-        
+
                 <nav> <!-- nav d'escription du menu -->
                     <ul id="menu">    
                         <li class="menu_list"><a class="menu_ancre" href="#Hebergements">Hébergements</a></li> <!-- ancre pour mener directement à la sertion de la page -->
@@ -34,7 +57,8 @@
             <div class="Barre_de_recherche">
                 <i class="fas fa-map-marker-alt fa-lg "></i>
                 <input id="Search" type="search" placeholder="Marseille, France" name="recherher" > <!-- Mettre Marseille -->
-                <button id="button">Rechercher</button>
+                <button id="button" type="submit" >Rechercher</button>
+                <button id="responsive_button" type="submit"><i class="fas fa-search"></i></button>
             </div>
         </header>
 

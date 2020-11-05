@@ -29,12 +29,18 @@ body
 }
 
 /* I- Header */
+#first_bloc_responsive /* RESPONSIVE */
+{
+    display: none;
+}
+
 .bloc_logo_menu
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 /* Logo */
 #logo
 {
@@ -45,6 +51,12 @@ body
 }
 
 /* Menu */
+
+#menu_responsive /* MENU RESPONSIVE */
+{
+    display: none;
+}
+
 #menu
 {
     margin-top: 0;
@@ -103,6 +115,11 @@ body
 }
 
 /* Barre de recherche */
+
+#responsive_button
+{
+    display: none;
+}
 .Barre_de_recherche
 {
     display: flex;
@@ -147,15 +164,19 @@ body
 /* II- Body */
 
 /* Filtre */
+#filtre_responsive
+{
+    display: none;
+}
 
 #titre_filtre
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 15px;
-    margin-left: 53px; /* Ajustement bordure */
+    margin-left: 63px; /* Ajustement bordure */
     font-size: 20px;
     font-weight: bold;
 }
@@ -165,11 +186,10 @@ body
     display: flex;
     flex-direction: row;
     width: auto;
-    background-color: #ffffff;
     border-radius: 0.5rem;
     list-style-type: none;
     padding-top: 10px;
-    margin-top: 31px;   /* Ajustement entre les textes */
+    margin-top: 13px;   /* Ajustement entre les textes */
 }
 
 .filtre
@@ -180,6 +200,7 @@ body
     padding-right: 10px;
     margin-right: 0;
     margin-left: 30px;
+    margin-top: 31px;
 }
 .filtre:hover /* changement d'effet au survole souris */
 {
@@ -292,6 +313,7 @@ figcaption a
     margin-left: 13px;
 }
 
+/* HERBERGEMENT */
 
 #logement
 {
@@ -672,22 +694,74 @@ footer * /* "*" tous les enfants héritent... */
 
 @media screen and (max-width: 375px) /*Iphone 8*/
 {
-    #logo
+    .bloc_logo_menu
     {
-        padding-top: 32px;
-        height: 45px;
-        width: 95px;
-        margin-left: 18px; /* Ajustement bordure */
+        display: none;
+    }
+    /* Bloc Respopnsive LOGO et S'INSCRIRE */
+
+    #first_bloc_responsive
+    {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
     }
 
-    .bloc_logo_menu
+    #logo_inscrip
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100vw;
+        padding-top: 32px;
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    #logo_responsive
+    {
+        height: 45px;
+        width: 95px;
+    }
+    
+    #ins_respo
     {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
-    #menu
+    #ins_respo ul
     {
+        list-style-type: none;
+    }
+
+
+    #list_respo a
+    {
+        text-decoration: none;
+        color: #0065FC;
+        font-weight: bold;
+
+    }
+
+  
+    #list_respo:hover
+    {
+        color:#0065FC;
+    }
+
+
+    #list_respo:hover
+    {
+        border-top: 4px solid #0065FC;
+        border-radius: 5px;
+    }
+
+    /* Menu Responsive*/
+    #menu_respo
+    {
+        margin-top: 0;
         display: flex;
         flex-direction: row;
         list-style-type: none;
@@ -695,39 +769,30 @@ footer * /* "*" tous les enfants héritent... */
         color: black;
     }
 
-    .menu_list
+    .menu_list_responsive
     {
         padding-bottom: 10px;
-        padding-right: 38px ;
-        padding-left: 38px;
-        margin-top: 40px;
+        padding-right: 35px ;
+        padding-left: 35px;
+        margin-top: 30px;
         padding-top: 0;
     }
-
-    .menu_list:hover .menu_ancre
-    {
-        color:#0065FC;
-    }
-
     .menu_ancre 
     {
         text-decoration: none;
         color: black;
     }
 
-    #inscription
+    .menu_list_responsive:hover .menu_ancre
     {
-        text-decoration: none;
-        color: #0065FC;
-        font-weight: bold;
+        color:#0065FC;
     }
 
-    .menu_list:hover
+    .menu_list_responsive:hover
     {
-        border-bottom: 3px solid #0065FC;
-        border-radius: 0;
+        border-top: 4px solid #0065FC;
+        border-radius: 5px;
     }
-
     /* Texte */
     .p1
     {
@@ -746,25 +811,94 @@ footer * /* "*" tous les enfants héritent... */
     }
 
     /* Barre de recherche */
+    #button
+    {
+        display: none;
+    }
 
     .Barre_de_recherche
     {
-        display: flex;
-        margin-left: 18px; /* Ajustement bordure */
+        margin-left: 21px; /* Ajustement bordure */
+        margin-right: 21px;
     }
-    
-    #button
+
+    #responsive_button
     {
         display: inline-block; /* Voir à quoi cela sert ??? */
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
-        width: 51px;
-        color: #ffffff;
+        width: 51px; /* Responsive */
         background-color: #0065fc;
         border-color: #0065fc;
         cursor: pointer;
+    }
+    .fa-search /* pour responsive */
+    {
+        color: white;
+    }
+
+    #Search
+    {
+        width: 229px; 
+        height: 50px;
+    }
+
+    /* FILTRES */
+    #titre_filtre
+    {
+        flex-direction: row;
+        justify-content: start;
+        width: 100vw;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 18px; /* Taille responsive */
+        font-weight: bold;
+        margin-left: 14px;
+    }
+    
+    .composant_filtre
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 0.5rem;
+        list-style-type: none;
+        margin-left: 11px;
+    }
+    
+    .filtre
+    {
+        border-radius: 30px;
+        margin-left: 9px;
+        width: auto;
+        padding-right: 0;
+    }
+    
+    .taille_filtre
+    {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    /* texte + icon */
+    #bloc_info
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 21px;
+    }
+
+    #text p
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 13px;
+    }
+    #icon_info
+    {
+        margin-left: 0;
     }
     
     /* logement */
@@ -802,8 +936,8 @@ footer * /* "*" tous les enfants héritent... */
         height: fit-content;
         margin-top: 15px;
         margin-bottom: 0;
-        margin-left: 18px;
-        margin-right: 18px;
+        margin-left: 19px;
+        margin-right: 19px;
     }
     
     .figcaption_populaire
@@ -838,8 +972,6 @@ footer * /* "*" tous les enfants héritent... */
         padding-top: 25px; /* Ajustement bordure "top" (compensation) */
     }
     
-
-    
     /* bloc_logement (hébergement à marseille et les plus populaires) */
     #Hebergements /* Titre + ancre Hebergements */
     {
@@ -855,6 +987,7 @@ footer * /* "*" tous les enfants héritent... */
         background-color: white;
         border: none;
         margin-left: 21px;
+    
     }
 
     #Part1 /* flexbox part1 (bloc hébergement) */
@@ -910,7 +1043,126 @@ footer * /* "*" tous les enfants héritent... */
         font-size: 16px;
         padding-top: 0px;
     }
-   
+
+
+    /* les activités à Marseille */
+    #Activite_a_Marseille
+    {
+        padding-bottom: 60px; /* Ajustement d'espace entre les éléments  */
+    }
+
+    #Activites
+    {
+        margin-left: 19px; /* Ajustement bordure responsive*/
+        margin-top: 65px; /* Ajustement */
+    }
+
+    #bloc_activites /* Flexbox mettre en ligne les box (row) */
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .box3 /* flexbox */
+    {
+        border: 1px solid  #F2F2F2;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px  #F2F2F2;
+        background-color: white ;
+        height: fit-content;
+        width: fit-content;
+        margin-right: 19px;
+        margin-bottom: 25px;
+        margin-left: 19px;
+    
+    }
+    
+    .titres_box /* marge entre titres et box de chaque photos Activités */
+    {
+        padding-left: 19px;
+    }
+    .img_port_calanques /* dimension image responsive*/
+    {
+        width: 334px;
+        height: 134px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+    
+    #img_pomegues /* dimension image responsive*/
+    {
+        width: 334px;
+        height: 134px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+    
+    #img_frioul /* dimension image responsive*/
+    {
+        width: 334px;
+        height: 134px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+    #img_DameDeLaGarde /* dimension image responsive*/
+    {
+        width: 334px;
+        height: 134px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+    
+    #img_longchamp /* dimension image responsive*/
+    {
+        width: 334px;
+        height: 134px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+    
+    
+    /* III-Footer */
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        background-color:  #F2F2F2;
+        width: 100vw;
+    
+    }
+  
+    .box4 /* FLEXBOX */
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%; 
+        padding-top: 15px;
+        padding-bottom: 0;
+    }
+  
+    .titre_footer
+    {
+        font-size: 19px;
+        font-weight: bold;
+    }
+    
+    .lien_footer /* Espacement entre liste à puce/ lien */
+    {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        font-size: 16px;
+    }
+    
+    .lien_footer:hover /* taille police ==> effet au survol */
+    {
+        font-size: 15px;
+    }
 
 
 }
