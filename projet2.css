@@ -1,3 +1,7 @@
+*
+{
+     border: black solid 1px;
+}
 @font-face
 {
     font-family: Raleway;
@@ -29,7 +33,7 @@ body
 }
 
 /* I- Header */
-#first_bloc_responsive /* RESPONSIVE */
+#logo_inscrip /* RESPONSIVE */
 {
     display: none;
 }
@@ -171,9 +175,6 @@ body
 
 #titre_filtre
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding-top: 30px;
     padding-bottom: 15px;
     margin-left: 63px; /* Ajustement bordure */
@@ -184,8 +185,7 @@ body
 .composant_filtre
 {
     display: flex;
-    flex-direction: row;
-    width: auto;
+    align-items: center;
     border-radius: 0.5rem;
     list-style-type: none;
     padding-top: 10px;
@@ -212,8 +212,7 @@ body
 .filtre figcaption
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     text-decoration: none;
     margin: 0 15px;
     width: fit-content;
@@ -234,8 +233,7 @@ figcaption a
 .icone_filtre1
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     padding: 16px  12px;
     background-color: #DEEBFF; 
@@ -244,8 +242,7 @@ figcaption a
 .icone_filtre2
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     padding: 14px 15px;
     background-color: #DEEBFF; 
@@ -275,14 +272,8 @@ figcaption a
 #bloc_info
 {
     display: flex;
-    flex-direction: row;
-}
-
-#icon_info_container
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    width: fit-content;
 }
 
 #icon_info
@@ -314,6 +305,10 @@ figcaption a
 }
 
 /* HERBERGEMENT */
+#Hebergements_responsive /* RESPONSIVE */
+{
+    display: none;
+}
 
 #logement
 {
@@ -472,16 +467,10 @@ figcaption a
 #titre_icon_bloc
 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
-#icon_chart /* déplacer icon en colonne + centrer verticalement */
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .fa-chart-line
 {
@@ -552,6 +541,12 @@ figcaption a
 }
 
 /* les activités à Marseille */
+#Activites_responsive /* RESPONSIVE */
+{
+    display: none;
+}
+
+
 #Activite_a_Marseille
 {
     padding-bottom: 60px; /* Ajustement d'espace entre les éléments  */
@@ -692,30 +687,29 @@ footer * /* "*" tous les enfants héritent... */
     font-size: 17px;
 }
 
-@media screen and (max-width: 375px) /*Iphone 8*/
+@media screen and (max-width: 375px)
 {
+    body 
+    {
+        width: 100vw;
+    }
+
     .bloc_logo_menu
     {
         display: none;
     }
     /* Bloc Respopnsive LOGO et S'INSCRIRE */
 
-    #first_bloc_responsive
-    {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-    }
 
     #logo_inscrip
     {
         display: flex;
-        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
-        width: 100vw;
+        width: 93vw;
         padding-top: 32px;
         padding-left: 21px;
-        padding-right: 21px;
+
     }
 
     #logo_responsive
@@ -724,12 +718,6 @@ footer * /* "*" tous les enfants héritent... */
         width: 95px;
     }
     
-    #ins_respo
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 
     #ins_respo ul
     {
@@ -742,7 +730,7 @@ footer * /* "*" tous les enfants héritent... */
         text-decoration: none;
         color: #0065FC;
         font-weight: bold;
-
+        padding-right: 21px;
     }
 
   
@@ -764,6 +752,7 @@ footer * /* "*" tous les enfants héritent... */
     {
         display: flex;
         flex-direction: row;
+        width: fit-content;
     }
     #menu_respo
     {
@@ -771,38 +760,59 @@ footer * /* "*" tous les enfants héritent... */
         display: flex;
         flex-direction: row;
         list-style-type: none;
-        float: right;
         color: black;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        
+        
     }
 
     .menu_list_responsive
     {
         padding-bottom: 10px;
-        padding-right: 35px ;
-        padding-left: 35px;
-        margin-top: 30px;
+        text-align: center;
+        padding-right: 34px;
+        padding-left: 34px;
+        margin-top: 20px;
         padding-top: 0;
+        width: 30vw;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .menu_list_responsive:hover
     {
         border-bottom: 2px solid #0065FC;
         border-radius: 0px;
-    }
-    /* Texte */
-    .p1
+    }  
+    .menu_ancre_responsive 
     {
-        word-wrap: break-word;
-        
+        text-decoration: none;
+        color: black;
+    }
+    
+    
+    /* Texte */
+    section
+    {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+
+    .p1
+    {   
         font-weight:bold;
-        font-size: 22px;
-        margin-left: 18px; /* Ajustement bordure */
+        font-size: 20px;
+        margin-left: 0;
+       
     }
 
     .p2
     {
         font-size: 15px;
-        margin-left: 18px; /* Ajustement bordure */
+       margin-left: 0;
+        
 
     }
 
@@ -816,6 +826,7 @@ footer * /* "*" tous les enfants héritent... */
     {
         margin-left: 21px; /* Ajustement bordure */
         margin-right: 21px;
+        
     }
 
     #responsive_button
@@ -829,6 +840,7 @@ footer * /* "*" tous les enfants héritent... */
         background-color: #0065fc;
         border-color: #0065fc;
         cursor: pointer;
+        margin-left: -18px;
     }
     .fa-search /* pour responsive */
     {
@@ -867,7 +879,7 @@ footer * /* "*" tous les enfants héritent... */
     {
         border-radius: 30px;
         margin-left: 9px;
-        width: auto;
+    
         padding-right: 0;
     }
     
@@ -881,17 +893,15 @@ footer * /* "*" tous les enfants héritent... */
     #bloc_info
     {
         display: flex;
-        flex-direction: row;
+        align-items: center;
         margin-left: 21px;
     }
 
     #text p
     {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin-left: 13px;
     }
+
     #icon_info
     {
         margin-left: 0;
@@ -969,8 +979,14 @@ footer * /* "*" tous les enfants héritent... */
     }
     
     /* bloc_logement (hébergement à marseille et les plus populaires) */
-    #Hebergements /* Titre + ancre Hebergements */
+    #Hebergements
     {
+        display: none;
+    }
+
+    #Hebergements_responsive /* Titre + ancre Hebergements */
+    {
+        display: block;
         padding-left: 10px;
         padding-top: 25px;/* ajustement bordure "top" (compensation)*/
     }
@@ -1042,13 +1058,19 @@ footer * /* "*" tous les enfants héritent... */
 
 
     /* les activités à Marseille */
+    #Activites
+    {
+        display: none;
+    }
+    
     #Activite_a_Marseille
     {
         padding-bottom: 60px; /* Ajustement d'espace entre les éléments  */
     }
 
-    #Activites
+    #Activites_responsive
     {
+        display: block;
         margin-left: 19px; /* Ajustement bordure responsive*/
         margin-top: 65px; /* Ajustement */
     }
@@ -1159,6 +1181,4 @@ footer * /* "*" tous les enfants héritent... */
     {
         font-size: 15px;
     }
-
-
 }

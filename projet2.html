@@ -13,27 +13,26 @@
     <body>
 
         <header>
-            <div id="first_bloc_responsive"> <!-- Responsive Iphone -->
-                <div id="logo_inscrip">
-                    <img id="logo_responsive" src="./images/logo/Reservia@3x.png" alt="logo Reservia" />
+            <!-- Voir pour align-items  -->
+            
+            <div id="logo_inscrip"> <!-- Responsive -->
+                <img id="logo_responsive" src="./images/logo/Reservia@3x.png" alt="logo Reservia" />
 
-                    <nav id="ins_respo">
-                        <ul>
-                            <li id="list_respo" ><a href="#">S'inscrire</a></li>
-                        </ul>
-                        
-                    </nav>
-
-                </div>
-            </div>
-
-            <div id="menu_responsive"> <!-- RESPONSIVE MENU (Iphone) -->
-                <nav>
-                    <ul id="menu_respo">
-                        <li class="menu_list_responsive"><a class="menu_ancre" href="#Hebergements">Hébergements</a></li> <!-- ancre pour mener directement à la sertion de la page -->
-                        <li class="menu_list_responsive"><a class="menu_ancre" href="#Activites">Activités</a></li>  <!-- ancre pour mener directement à la sertion de la page --> 
+                <nav id="ins_respo">
+                    <ul>
+                        <li id="list_respo" ><a href="#">S'inscrire</a></li>
                     </ul>
+                        
+                </nav>
+            </div>
+          
 
+            <div id="menu_responsive"> <!-- RESPONSIVE MENU (Iphone)  -->
+                <nav >
+                    <ul id="menu_respo">
+                        <li class="menu_list_responsive"><a class="menu_ancre_responsive" href="#Hebergements_responsive">Hébergements</a></li> <!-- ancre pour mener directement à la sertion de la page -->
+                        <li class="menu_list_responsive"><a class="menu_ancre_responsive" href="#Activites_responsive">Activités</a></li>  <!-- ancre pour mener directement à la sertion de la page --> 
+                    </ul>
                 </nav>
             </div>
 
@@ -63,7 +62,7 @@
         </header>
 
         <div class="composant_filtre">
-            <div id="titre_filtre">Filtres</div>
+            <h2 id="titre_filtre">Filtres</h2>
             <figure class="filtre">
                 <div class="icone_filtre1">
                     <i class="fas fa-money-bill-wave fa-lg"></i>
@@ -100,17 +99,14 @@
 
         <!-- texte + icon -->
         <figure id="bloc_info">
-            <div id="icon_info_container">
-                <div id="icon_info">
-                    <i class="fas fa-info fa-xs"></i>
-                </div>
-            </div>
+            <div id="icon_info"><i class="fas fa-info fa-xs"></i></div>
             <figcaption id="text"><p>Plus de 500 logements sont disponibles dans cette ville</p></figcaption>
         </figure>
 
         <div id="logement">
             <div id="bloc_hebergement">  <!-- Bloc hebergement -->
                 <h2 id="Hebergements">Hébergements à Marseille</h2> <!-- Création de l'ancre "hébergement" -->
+                <h2 id="Hebergements_responsive">Hébergements à Marseille</h2> <!-- RESPONSIVE Création de l'ancre "hébergement" -->
                 <div id="Part1">
                     <figure class ="box">
                         <a href="#">
@@ -233,9 +229,7 @@
             <div id="Populaire">
                 <div id="titre_icon_bloc">
                     <h2 id="titre_populaire">Les plus populaires</h2>
-                    <div id="icon_chart" >
-                        <i class="fas fa-chart-line fa-2x"></i>
-                    </div>
+                    <i class="fas fa-chart-line fa-2x"></i>
                 </div>
 
                 <figure class ="box2">
@@ -301,6 +295,7 @@
         <div id="Activite_a_Marseille">
 
             <h2 id="Activites">Activités à Marseille</h2> <!-- Création de l'ancre "Activités" -->
+            <h2 id="Activites_responsive">Activités à Marseille</h2> <!-- RESPONSIVE Création de l'ancre "Activités" -->
 
             <div id="bloc_activites">
                 <div class="box_column">
