@@ -41,7 +41,7 @@ body
 .bloc_logo_menu
 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -305,6 +305,7 @@ figcaption a
 }
 
 /* HERBERGEMENT */
+
 #Hebergements_responsive /* RESPONSIVE */
 {
     display: none;
@@ -524,7 +525,7 @@ figcaption a
 
 .figcaption_populaire p
 {
-    line-height: 0;
+    line-height: 0; /* définit la hauteur de la boîte d'une ligne */
 }
 
 .figcaption_populaire h3
@@ -920,28 +921,16 @@ footer * /* "*" tous les enfants héritent... */
     /* Populaire */
     #Populaire 
     {
-        display: flex;
-        flex-direction: column;
-        background-color:  #F2F2F2;
         border: none;
         border-radius: 0;
-        width: fit-content;
+        width: 100vw;
         float: left;
         padding-bottom: 36px;
         margin-right: 0;
     }
     .box2
     {
-        display: flex;
-        flex-direction: row;
-        border: 1px solid  #F2F2F2;
-        border-radius: 20px;
-        padding-top: 5px;
-        padding-left: 5px;
-        padding-bottom: 2px; /* compensation car lien prend 3px en bottom */
-        background-color: white;
         width: 334px;
-        height: fit-content;
         margin-top: 15px;
         margin-bottom: 0;
         margin-left: 19px;
@@ -950,34 +939,32 @@ footer * /* "*" tous les enfants héritent... */
     
     .figcaption_populaire
     {
-        padding-left: 21px;
         padding-right: 40px;
     }
     
     #titre_populaire
     {
         padding-left: 18px;
-        padding-top: 25px; /* Ajustement bordure "top" (compensation) */
     }
     
     #titre_icon_bloc
     {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-    
-    #icon_chart /* déplacer icon en colonne + centrer verticalement */
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
     
     .fa-chart-line
     {
         padding-right: 10px;
         padding-top: 25px; /* Ajustement bordure "top" (compensation) */
+    }
+    .img_pop
+    {
+        height: 135px;
+        width: 127px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        object-fit: cover;
     }
     
     /* bloc_logement (hébergement à marseille et les plus populaires) */
@@ -1184,3 +1171,8 @@ footer * /* "*" tous les enfants héritent... */
         font-size: 15px;
     }
 }
+
+@media screen and (max-width: 768px) /* Résolution intermédiaire Tablette*/
+{
+   
+} 
