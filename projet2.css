@@ -1,7 +1,7 @@
-*
+/* *
 {
      border: black solid 1px;
-}
+} */
 @font-face
 {
     font-family: Raleway;
@@ -74,8 +74,8 @@ body
 .menu_list
 {
     padding-top: 50px;
-    padding-right:70px ;
-    padding-left:70px ;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .menu_list:hover .menu_ancre
@@ -500,7 +500,7 @@ figcaption a
     width: 348px;
     height: fit-content;
     margin-top: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .box2 a
@@ -673,6 +673,7 @@ footer * /* "*" tous les enfants héritent... */
 {
     font-size: 19px;
     font-weight: bold;
+    width: fit-content;
 }
 
 .lien_footer /* Espacement entre liste à puce/ lien */
@@ -680,6 +681,7 @@ footer * /* "*" tous les enfants héritent... */
     margin-top: 18px;
     margin-bottom: 18px;
     font-size: 18px;
+    width: fit-content;
 }
 
 .lien_footer:hover /* taille police ==> effet au survol */
