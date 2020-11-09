@@ -449,7 +449,6 @@ figcaption a
 
 
 /* Bloc populaire */
-
 #Populaire 
 {
     display: flex;
@@ -735,19 +734,14 @@ footer * /* "*" tous les enfants héritent... */
         color: #0065FC;
         font-weight: bold;
         padding-right: 21px;
+        border-bottom: none;
     }
 
   
     #list_respo:hover
     {
         color:#0065FC;
-    }
-
-
-    #list_respo:hover
-    {
-        border-top: 4px solid #0065FC;
-        border-radius: 5px;
+        cursor: pointer;
     }
 
     /* Menu Responsive*/
@@ -999,6 +993,7 @@ footer * /* "*" tous les enfants héritent... */
         display: flex;
         flex-direction: column;
         margin-left: 0;
+        margin-right: 0;
         
     }
     
@@ -1007,7 +1002,7 @@ footer * /* "*" tous les enfants héritent... */
         display: flex;
         flex-direction: column;
         margin-left: 0;
-       
+        margin-right: 0;
     }
     
     .box
@@ -1175,7 +1170,7 @@ footer * /* "*" tous les enfants héritent... */
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) /* Résolution intermédiaire Tablette*/
+@media screen and (min-width: 376px) and (max-width: 768px) /* Résolution intermédiaire Tablette*/
 {
    body 
    {
@@ -1258,6 +1253,11 @@ footer * /* "*" tous les enfants héritent... */
         background-color: white;
     }
 
+    .texte_hebergement
+    {
+        margin-top: 30px;
+    }
+
     #Part1
     {
         margin-right: 0;
@@ -1277,14 +1277,22 @@ footer * /* "*" tous les enfants héritent... */
 
     #Populaire
     {
-        flex-direction: row;
+        flex-direction: column;
         width: 100vw;
         border-radius: 0;
+        padding-bottom: 10px;
     }
 
     #titre_populaire
     {
         margin-right: 50px;
+        margin-top: 0;
+    }
+
+    #bloc_pop_responsive
+    {
+        display: flex;
+        flex-direction: row;
     }
     .box2
     { 
