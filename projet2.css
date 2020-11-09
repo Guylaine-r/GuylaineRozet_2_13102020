@@ -43,6 +43,7 @@ body
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 54px;
 }
 
 /* Logo */
@@ -51,7 +52,7 @@ body
     padding-top: 50px;
     padding-bottom: 20px;
     height: 50px;
-    margin-left: 54px; /* Ajustement bordure */
+    
 }
 
 /* Menu */
@@ -177,12 +178,11 @@ body
 {
     padding-top: 30px;
     padding-bottom: 15px;
-    margin-left: 63px; /* Ajustement bordure */
     font-size: 20px;
     font-weight: bold;
 }
 
-.composant_filtre
+#composant_filtre
 {
     display: flex;
     align-items: center;
@@ -190,6 +190,7 @@ body
     list-style-type: none;
     padding-top: 10px;
     margin-top: 13px;   /* Ajustement entre les textes */
+    margin-left: 63px;
 }
 
 .filtre
@@ -274,6 +275,7 @@ figcaption a
     display: flex;
     align-items: center;
     width: fit-content;
+    margin-left: 55px;
 }
 
 #icon_info
@@ -281,7 +283,6 @@ figcaption a
     border-radius: 50%;
     border: 1px solid #F2F2F2;
     padding: 3px 9px 4px 9px;
-    margin-left: 10px; /* Ajustement bordure */
 }
 
 #icon_info img
@@ -315,6 +316,8 @@ figcaption a
 {
     display: flex;
     flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* bloc_logement (hébergement à marseille et les plus populaires) */
@@ -328,7 +331,6 @@ figcaption a
     border-radius: 20px;
     width: fit-content;
     margin-right: 40px;
-    margin-left: 50px;  
 }
 
 #Hebergements /* Titre + ancre Hebergements */
@@ -354,7 +356,7 @@ figcaption a
 
 .box
 { 
-    
+
     border: 1px solid  #F2F2F2;
     border-radius: 20px;
     box-shadow: 1px 1px 1px  #F2F2F2;
@@ -456,7 +458,6 @@ figcaption a
     background-color:  #F2F2F2;
     border-radius: 20px;
     width: fit-content;
-    margin-right: 50px;
 }
 
 #titre_populaire
@@ -869,7 +870,7 @@ footer * /* "*" tous les enfants héritent... */
         margin-left: 14px;
     }
     
-    .composant_filtre
+    #composant_filtre
     {
         flex-direction: row;
         flex-wrap: wrap;
@@ -916,6 +917,8 @@ footer * /* "*" tous les enfants héritent... */
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     /* Populaire */
@@ -1172,7 +1175,187 @@ footer * /* "*" tous les enfants héritent... */
     }
 }
 
-@media screen and (max-width: 768px) /* Résolution intermédiaire Tablette*/
+@media screen and (min-width: 375px) and (max-width: 768px) /* Résolution intermédiaire Tablette*/
 {
-   
-} 
+   body 
+   {
+        width: 100vw;
+   }
+
+   /* BLOC LOGO MEMU */
+   .bloc_logo_menu
+   {
+       margin-left: 18px;
+   }
+
+   /* TEXTE DESCRIPTION */
+   .p1
+   {
+       margin-left: 18px;
+   }
+
+   .p2
+   {
+       margin-left: 20px;
+   }
+
+   /*  Barre de recherche */
+   .Barre_de_recherche
+   {
+       margin-left: 18px;
+   }
+    #Search
+    {
+        width: 234px;
+    }
+    
+    #button
+    {
+        width: 134px;
+        padding: 0;
+    }
+
+    /* FILTRES */
+    #composant_filtre
+    {
+        margin-left: 18px;
+    }
+ 
+    #titre_filtre
+    {
+        margin-left: 0;
+    }
+
+    .filtre
+    {
+        margin-left: 10px;
+        padding-right: 0;
+    }
+
+    .taille_filtre
+    {
+        font-size: 14px;
+    }
+
+    /* TEXTE INFO */
+    #bloc_info
+    {
+        margin-left: 15px;
+    }
+
+    /* LOGEMENT (Hébergement + Populaire) */
+    #logement
+    {
+        margin-left: 0px;
+        flex-direction: column-reverse;
+    }
+    /* HEBERGEMENT */
+
+    #bloc_hebergement
+    {
+        border-radius: 0;
+        width: 100vw;
+        background-color: white;
+    }
+
+    #Part1
+    {
+        margin-right: 0;
+    }
+
+    #Part2
+    {
+        margin-right: 0;
+    }
+
+    .box
+    {
+        margin-left: 5px;
+    }
+
+    /* POPULAIRE */
+
+    #Populaire
+    {
+        flex-direction: row;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    #titre_populaire
+    {
+        margin-right: 50px;
+    }
+    .box2
+    { 
+        flex-direction: column;
+        border: 1px solid  #F2F2F2;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px  #F2F2F2;
+        padding: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: white ;
+        height: fit-content;
+        width: 237px;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .box2 h3
+    {
+        font-size: 18px;
+    }
+    .box2 a
+    {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+    }
+
+    .img_pop
+    {
+        height: 114px;
+        width: 237px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+
+    .box_star2
+    {
+        padding-top: 0;
+    }
+
+
+
+    /* ACTIVITES */
+    #Activite_a_Marseille
+    {
+        margin-left: 0;
+    }
+
+    #Activites
+    {
+        padding-left: 0;
+    }
+
+    #bloc_activites
+    {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box_column
+    {
+        margin-right: 15px; /* Ajuster plus tard !!! */
+    }
+
+    .box3
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}    
