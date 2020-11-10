@@ -1,6 +1,6 @@
 /* *
 {
-     border: black solid 1px;
+    border: black solid 1px;
 } */
 @font-face
 {
@@ -163,6 +163,7 @@ body
     border-color: #0065fc;
     cursor: pointer;
     font-size: 17px;
+    border: 1px;
 }
 
 
@@ -188,8 +189,6 @@ body
     align-items: center;
     border-radius: 0.5rem;
     list-style-type: none;
-    padding-top: 10px;
-    margin-top: 13px;   /* Ajustement entre les textes */
     margin-left: 63px;
 }
 
@@ -231,7 +230,7 @@ figcaption a
     font-weight: bold;
 }
 
-.icone_filtre1
+.icone_filtre1 /* filtres économique et animaux  */
 {
     display: flex;
     align-items: center;
@@ -240,14 +239,24 @@ figcaption a
     background-color: #DEEBFF; 
 }
 
-.icone_filtre2
+.icone_filtre2 /* FILTRE FAMILIAL */
 {
     display: flex;
     align-items: center;
     border-radius: 50%;
-    padding: 14px 15px;
+    padding: 16px 16px;
     background-color: #DEEBFF; 
 }
+.icone_filtre3 /* FILTRE ROMANTIQUE */
+{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 16px 14px;
+    background-color: #DEEBFF; 
+}
+
+
 
 .fa-money-bill-wave
 {
@@ -326,7 +335,7 @@ figcaption a
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    border: 1px solid  #F2F2F2;
+    border: 1px solid #F2F2F2;
     background-color:  #F2F2F2;
     border-radius: 20px;
     width: fit-content;
@@ -456,7 +465,7 @@ figcaption a
     border: 1px solid  #F2F2F2;
     background-color:  #F2F2F2;
     border-radius: 20px;
-    width: fit-content;
+    width: auto;
 }
 
 #titre_populaire
@@ -563,7 +572,7 @@ figcaption a
 {
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .box_column a
@@ -824,7 +833,6 @@ footer * /* "*" tous les enfants héritent... */
     {
         margin-left: 21px; /* Ajustement bordure */
         margin-right: 21px;
-        
     }
 
     #responsive_button
@@ -839,6 +847,7 @@ footer * /* "*" tous les enfants héritent... */
         border-color: #0065fc;
         cursor: pointer;
         margin-left: -18px;
+        border: 1px;
     }
     .fa-search /* pour responsive */
     {
@@ -886,6 +895,12 @@ footer * /* "*" tous les enfants héritent... */
         font-size: 18px;
         font-weight: bold;
     }
+
+    .filtre figcaption 
+    {
+        margin: 0 10px;
+    }
+
     
     /* texte + icon */
     #bloc_info
@@ -920,10 +935,9 @@ footer * /* "*" tous les enfants héritent... */
     {
         border: none;
         border-radius: 0;
-        width: 100vw;
-        float: left;
         padding-bottom: 36px;
         margin-right: 0;
+        width: auto;
     }
     .box2
     {
@@ -983,7 +997,7 @@ footer * /* "*" tous les enfants héritent... */
         flex-direction: column;
         float: left;
         background-color: white;
-        border: none;
+        border: 1px solid white ;
         margin-left: 21px;
     
     }
@@ -1137,7 +1151,6 @@ footer * /* "*" tous les enfants héritent... */
         display: flex;
         flex-direction: column;
         background-color:  #F2F2F2;
-        width: 100vw;
     
     }
   
@@ -1219,6 +1232,7 @@ footer * /* "*" tous les enfants héritent... */
     #titre_filtre
     {
         margin-left: 0;
+        font-size: 18px;
     }
 
     .filtre
@@ -1248,9 +1262,8 @@ footer * /* "*" tous les enfants héritent... */
 
     #bloc_hebergement
     {
-        border-radius: 0;
-        width: 100vw;
         background-color: white;
+        border: 1px solid white;
     }
 
     .texte_hebergement
@@ -1278,9 +1291,9 @@ footer * /* "*" tous les enfants héritent... */
     #Populaire
     {
         flex-direction: column;
-        width: 100vw;
         border-radius: 0;
         padding-bottom: 10px;
+        width: fit-content;
     }
 
     #titre_populaire
@@ -1307,8 +1320,8 @@ footer * /* "*" tous les enfants héritent... */
         background-color: white ;
         height: fit-content;
         width: 237px;
-        margin-right: 0;
-        margin-left: 5px;
+        margin-right: 3px;
+        margin-left: 3px;
     }
     .box2 h3
     {
@@ -1328,6 +1341,7 @@ footer * /* "*" tous les enfants héritent... */
         width: 237px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
         object-fit: cover;
     }
 
@@ -1335,8 +1349,6 @@ footer * /* "*" tous les enfants héritent... */
     {
         padding-top: 0;
     }
-
-
 
     /* ACTIVITES */
     #Activite_a_Marseille
@@ -1364,6 +1376,18 @@ footer * /* "*" tous les enfants héritent... */
     {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    /* FOOTER */
+
+    .box4
+    {
+        width: 50%;
+    }
+
+    .lien_footer
+    {
+        font-size: 15px;
     }
 
 }    
