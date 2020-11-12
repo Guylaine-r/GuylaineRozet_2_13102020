@@ -160,7 +160,6 @@ body
     width: 9.31%;
     color: #ffffff;
     background-color: #0065fc;
-    border-color: #0065fc;
     cursor: pointer;
     font-size: 17px;
     border: 1px;
@@ -204,8 +203,6 @@ body
 }
 .filtre:hover /* changement d'effet au survole souris */
 {
-    -webkit-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
-    -moz-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
     box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
 }
 
@@ -389,8 +386,6 @@ figcaption a
 
 .box:hover
 {
-    -webkit-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
-    -moz-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
     box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
 }
 
@@ -521,8 +516,6 @@ figcaption a
 
 .box2:hover
 {
-    -webkit-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
-    -moz-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
     box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
 }
 
@@ -597,10 +590,9 @@ figcaption a
 
 .box3:hover /* changement d'effet au survol */
 {
-    -webkit-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
-    -moz-box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
     box-shadow: 11px 15px 42px -4px rgba(0,0,0,0.25);
 }
+
 .titres_box /* marge entre titres et box de chaque photos Activités */
 {
     padding-left: 19px;
@@ -801,7 +793,7 @@ footer * /* "*" tous les enfants héritent... */
     
     
     /* Texte */
-    section
+    #section_page
     {
         padding-left: 21px;
         padding-right: 21px;
@@ -941,7 +933,7 @@ footer * /* "*" tous les enfants héritent... */
     }
     .box2
     {
-        width: 334px;
+        width: auto;
         margin-top: 15px;
         margin-bottom: 0;
         margin-left: 19px;
@@ -950,7 +942,7 @@ footer * /* "*" tous les enfants héritent... */
     
     .figcaption_populaire
     {
-        padding-right: 40px;
+        padding-right: 15px;
     }
     
     #titre_populaire
@@ -1017,6 +1009,7 @@ footer * /* "*" tous les enfants héritent... */
         flex-direction: column;
         margin-left: 0;
         margin-right: 0;
+        width: fit-content;
     }
     
     .box
@@ -1038,7 +1031,7 @@ footer * /* "*" tous les enfants héritent... */
     .img_heberg
     {
         height: 114px;
-        width: 325px;
+        width: 100%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         object-fit: cover;
@@ -1183,6 +1176,7 @@ footer * /* "*" tous les enfants héritent... */
     }
 }
 
+
 @media screen and (min-width: 376px) and (max-width: 768px) /* Résolution intermédiaire Tablette*/
 {
    body 
@@ -1207,7 +1201,7 @@ footer * /* "*" tous les enfants héritent... */
        margin-left: 20px;
    }
 
-   /*  Barre de recherche */
+   /* Barre de recherche */
    .Barre_de_recherche
    {
        margin-left: 18px;
@@ -1319,7 +1313,7 @@ footer * /* "*" tous les enfants héritent... */
         padding-right: 5px;
         background-color: white ;
         height: fit-content;
-        width: 237px;
+        width: auto;
         margin-right: 3px;
         margin-left: 3px;
     }
