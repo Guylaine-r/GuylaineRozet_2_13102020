@@ -507,7 +507,7 @@ figcaption a
     border-radius: 20px;
     padding-top: 5px;
     padding-left: 5px;
-    padding-bottom: 2px; /* compensation car lien prend 3px en bottom */
+    padding-bottom: 5px;
     background-color: white;
     width: auto;
     height: 10vw;
@@ -594,7 +594,7 @@ figcaption a
     width: fit-content;
     margin-right: 0;
     margin-left: 45px;
-    margin-top: 15px;
+    margin-top: 10px;
 
 }
 
@@ -610,7 +610,7 @@ figcaption a
 .img_port_calanques /* Dimensions images */
 {
     width: 20vw;
-    height: 25vw;
+    height: 24vw;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -952,6 +952,7 @@ footer * /* "*" tous les enfants héritent... */
     .box2
     {
         max-width: 90vw;
+        height: fit-content;
         margin-bottom: 0;
         margin-left: 19px;
         margin-right: 19px;
@@ -1113,6 +1114,8 @@ footer * /* "*" tous les enfants héritent... */
         height: fit-content;
         width: fit-content;
         margin-bottom: 25px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     
     .titres_box /* marge entre titres et box de chaque photos Activités */
