@@ -556,6 +556,7 @@ figcaption a
 {
     display: flex;
     flex-direction: row;
+    padding-bottom: 5px;
 
 }
 
@@ -700,7 +701,7 @@ footer * /* "*" tous les enfants héritent... */
 
 .titre_footer
 {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: bold;
     width: fit-content;
 }
@@ -709,13 +710,13 @@ footer * /* "*" tous les enfants héritent... */
 {
     margin-top: 18px;
     margin-bottom: 18px;
-    font-size: 18px;
+    font-size: 14px;
     width: fit-content;
 }
 
 .lien_footer:hover /* taille police ==> effet au survol */
 {
-    font-size: 17px;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 720px)
@@ -791,14 +792,13 @@ footer * /* "*" tous les enfants héritent... */
         margin-top: 0;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         list-style-type: none;
         color: black;
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
-        width: 98vw;
-        
-        
+        width: 99vw;
     }
 
     .menu_list_responsive
@@ -978,19 +978,24 @@ footer * /* "*" tous les enfants héritent... */
     
     .figcaption_populaire
     {
-        padding-right: 15px;
-    }
-
-    .figcaption_populaire p 
-    {
-        margin-bottom: 0;
+        padding-right: 25px;
     }
 
     .figcaption_populaire h3 
     {
-        margin-top: 12px;
-    }
+        margin-top: 14px;
+        font-size: 13px;
     
+       
+    }
+
+
+    .figcaption_populaire p 
+    {
+        margin-bottom: 0;
+        
+    }
+
     #titre_populaire
     {
         padding-left: 0px;
@@ -1019,6 +1024,7 @@ footer * /* "*" tous les enfants héritent... */
     .box_star2
     {
         padding-top: 0;
+        padding-bottom: 5px;
     }
     
     /* bloc_logement (hébergement à marseille et les plus populaires) */
@@ -1043,7 +1049,7 @@ footer * /* "*" tous les enfants héritent... */
         border: 1px solid white ;
         width: auto;
         margin-left: 15px;
-        margin-right: 20px;
+        margin-right: 25px;
     
     }
 
@@ -1120,7 +1126,7 @@ footer * /* "*" tous les enfants héritent... */
         margin-top: 65px; /* Ajustement */
     }
 
-    #bloc_activites /* Flexbox mettre en ligne les box (row) */
+    #bloc_activites 
     {
         display: flex;
         flex-direction: column;
@@ -1214,7 +1220,7 @@ footer * /* "*" tous les enfants héritent... */
   
     .titre_footer
     {
-        font-size: 19px;
+        font-size: 17px;
         font-weight: bold;
     }
     
@@ -1222,12 +1228,12 @@ footer * /* "*" tous les enfants héritent... */
     {
         margin-top: 18px;
         margin-bottom: 18px;
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .lien_footer:hover /* taille police ==> effet au survol */
     {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -1304,7 +1310,7 @@ footer * /* "*" tous les enfants héritent... */
 
     .taille_filtre
     {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     /* TEXTE INFO */
@@ -1361,7 +1367,8 @@ footer * /* "*" tous les enfants héritent... */
 
     .box
     {
-        margin-left: 5px;
+        margin-left: 0px;
+        margin-right: 10px;
     }
 
     /* POPULAIRE */
@@ -1423,12 +1430,18 @@ footer * /* "*" tous les enfants héritent... */
     .figcaption_populaire
     {
         padding-right: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 
     .figcaption_populaire p 
     {
         font-size: 11px;
     }
+
+    
 
     .box_star2
     {
@@ -1449,13 +1462,6 @@ footer * /* "*" tous les enfants héritent... */
     #bloc_activites
     {
         margin-left: 0;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .box_column
-    {
-        margin-right: 30px;
-
     }
 
     .box3
@@ -1467,11 +1473,11 @@ footer * /* "*" tous les enfants héritent... */
 
     .titres_box
     {
-        font-size: 10px;
+        font-size: 9px;
         padding-left: 10px;
     }
 
-    /* FOOTER */
+    /* FOOTER*/
 
     .box4
     {
@@ -1487,6 +1493,4 @@ footer * /* "*" tous les enfants héritent... */
     {
         font-size: 12px;
     }
-
-
 }    
