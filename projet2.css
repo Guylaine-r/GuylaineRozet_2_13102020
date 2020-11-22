@@ -42,7 +42,6 @@ body
 .bloc_logo_menu
 {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     align-content: flex-end;
     margin-left: 54px;
@@ -117,13 +116,15 @@ nav
     font-weight:bold;
     font-size: 20px;
     margin-left: 55px; /* Ajustement bordure */
+    margin-bottom: 0;
 }
 
 .p2
 {
     font-size: 15px;
     margin-left: 56px; /* Ajustement bordure */
-
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 /* Barre de recherche */
@@ -1413,10 +1414,12 @@ footer * /* "*" tous les enfants héritent... */
         background-color: white ;
         height: auto;
         width: auto;
+        padding: 5px;
     }
-    .box2 h3
+    .figcaption_populaire h3
     {
         font-size: 14px;
+        margin-right: 0;
     }
     .box2 a
     {
