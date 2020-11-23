@@ -1426,7 +1426,7 @@ footer * /* "*" tous les enfants héritent... */
         padding: 10px;
         background-color: white ;
         height: auto;
-        width: auto;
+        width: 100%;
         padding: 5px;
     }
     .figcaption_populaire h3
