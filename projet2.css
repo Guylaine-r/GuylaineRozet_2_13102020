@@ -516,7 +516,7 @@ figcaption a
     padding-left: 5px;
     padding-bottom: 5px;
     background-color: white;
-    width: 100%;
+    width: calc(100% - 60px);
     height: 9vw;
     margin-top: 25px;
     margin-right: 30px;
@@ -987,6 +987,7 @@ footer * /* "*" tous les enfants héritent... */
         max-width: 90vw;
         height: fit-content;
         height: -moz-fit-content;
+        width: calc(100% - 38px);
         margin-bottom: 0;
         margin-left: 19px;
         margin-right: 19px;
@@ -1157,8 +1158,7 @@ footer * /* "*" tous les enfants héritent... */
         background-color: white ;
         height: fit-content;
         height: -moz-fit-content;
-        width: fit-content;
-        width: -moz-fit-content;
+        width: calc(100% - 40px);
         margin-bottom: 10px;
         margin-right: 20px;
         margin-left: 20px;
@@ -1426,7 +1426,6 @@ footer * /* "*" tous les enfants héritent... */
         padding: 10px;
         background-color: white ;
         height: auto;
-        width: 100%;
         padding: 5px;
     }
     .figcaption_populaire h3
