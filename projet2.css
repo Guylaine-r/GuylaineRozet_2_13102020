@@ -987,10 +987,10 @@ footer * /* "*" tous les enfants héritent... */
         max-width: 90vw;
         height: fit-content;
         height: -moz-fit-content;
-        width: calc(100% - 38px);
+        width: 95%;
         margin-bottom: 0;
-        margin-left: 19px;
-        margin-right: 19px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 15px;
         padding-bottom: 3px;
     }
