@@ -1,7 +1,4 @@
-/* *
-{
-    border: black solid 1px;
-} */
+/* PRINCIPAL */
 @font-face
 {
     font-family: Raleway;
@@ -54,7 +51,6 @@ body
     padding-top: 50px;
     padding-bottom: 20px;
     height: 50px;
-    
 }
 
 /* Menu */
@@ -174,8 +170,7 @@ nav
     border: 1px;
 }
 
-
-/* II- Body */
+/* II/ Contenu central */
 
 /* Filtre */
 #filtre_responsive
@@ -263,11 +258,9 @@ figcaption a
     background-color: #DEEBFF; 
 }
 
-
-
 .fa-money-bill-wave
 {
-    filter: invert(40%) sepia(75%) saturate(7500%) hue-rotate(210deg) brightness(100%) contrast(104%);
+    filter: invert(40%) sepia(75%) saturate(7500%) hue-rotate(210deg) brightness(100%) contrast(104%); /* Changement de couleur des icones par défaut   */
 }
 
 .fa-child
@@ -437,7 +430,7 @@ figcaption a
 .fa-star
 {
     padding-right: 2px;
-    filter: invert(40%) sepia(75%) saturate(7500%) hue-rotate(210deg) brightness(100%) contrast(104%);
+    filter: invert(40%) sepia(75%) saturate(7500%) hue-rotate(210deg) brightness(100%) contrast(104%); 
 }
 
 .star_gray
@@ -729,6 +722,19 @@ footer * /* "*" tous les enfants héritent... */
     font-size: 13px;
 }
 
+@media screen and (max-width: 425px) /* CENTRER Barre de recherche responsive Téléphone */
+{
+    #button
+    {
+        display: none;
+    }
+
+    .Barre_de_recherche
+    {
+       justify-content: center;
+    }
+}
+
 @media screen and (max-width: 720px)
 {
     body 
@@ -756,7 +762,6 @@ footer * /* "*" tous les enfants héritent... */
         width: 93vw;
         padding-top: 32px;
         padding-left: 21px;
-
     }
 
     #logo_responsive
@@ -834,6 +839,11 @@ footer * /* "*" tous les enfants héritent... */
     {
         text-decoration: none;
         color: black;
+    }
+
+    .menu_list_responsive:hover .menu_ancre_responsive 
+    {
+        color: #0065FC;
     }
     
     
@@ -986,7 +996,7 @@ footer * /* "*" tous les enfants héritent... */
     {
         max-width: 90vw;
         height: fit-content;
-        height: -moz-fit-content;
+        height: -moz-fit-content; /* FIREFOX */
         width: 95%;
         margin-bottom: 0;
         margin-left: auto;
@@ -1257,7 +1267,7 @@ footer * /* "*" tous les enfants héritent... */
     }
 }
 
-@media screen and (min-width: 721px) and (max-width: 1270px) /* Résolution intermédiaire Tablette*/
+@media screen and (min-width: 721px) and (max-width: 1270px) /* Résolution Tablette*/
 {
    body 
    {
